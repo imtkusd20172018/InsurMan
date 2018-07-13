@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Import Google Icon Font-->
+		<title>Miss FinRobart</title>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+		<!--Let browser know website is optimized for mobile-->
+				<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<link rel="stylesheet" href=".\statics\index.min.css">
+	</head>
+	<body>
+		<div class="row">
+			<div class="col l4">
+				<ul id="slide-out" class="side-nav fixed z-depth-2">
+					<li class="logo">
+						<img class="brand-logo" src=".\img\logo.png">
+					</li>
+					<li><a target="_blank" href="https://www.ctbcbank.com/CTCBPortalWeb/appmanager/ebank/rb">銀行官網</a></li>
+					<li><a target="_blank" href="http://www.cwb.gov.tw/V7/forecast/">天氣</a></li>
+					<li><a target="_blank" href="https://tw.stock.yahoo.com/">股市</a></li>
+					<li id="lang"><a href="/en" id="lang_btn">English Ver.</a></li>
+				</ul>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>
+			<div class="col offset-l4">
+				<div id="QQ" class="card brown lighten-2 z-index-2">
+					<div id="chatbox" class="card white">
+						<div id="chatbox_content" class="card-content white-text">
+							<div class="container">
+								<div class="panel panel-primary">
+									<div class="panel-body">
+										<ul class="chat">
+											<li class="left clearfix">
+												<div class="container">
+													<div class="message row">
+														<div class="col s2 m2 l2 ">
+															<img src=".\img\photo.png" alt="User Avatar" class="mfr circle responsive-img">
+														</div>
+														<div class="col s10 m10 l10 chat-body clearfix left">
+															<p class="left">
+																您好！我是金融智能客服"蘿蔔特"，很高興為您服務！請問需要什麼呢？
+															</p>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m12 l8">
+							<form action="/">
+								<div id="input_box" class="card white">
+									<div class="input-field">
+										<input placeholder="請輸入..." id="input_text" type="text" class="validate" name="query">
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col s0 m0 l2">
+							<div id="voicesetting"	class="card z-index-2">
+								<a id="voiceBtn" class="btn-floating light orange waves-effect waves-light"><i id="voice_icon" class="material-icons">settings_voice</i></a>
+							</div>
+						</div>
+						<div class="col s12 m12 l2 sendbox">
+							<div id="send_box" class="card z-index-2">
+								<a id="sendbox" class="btn-floating waves-effect waves-light"><i class="material-icons">send</i></a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+		<script src=".\statics\index.js"></script>
+		<script>var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};</script>
+		<script>
+			if($(window).width() < 993){
+				$('#voicesetting').css('display', 'none');
+				$('#send_box').css('margin-right','0px');
+				$('.col.s12.m12.l2.sendbox').css({
+					'padding-right':'30px',
+					'padding-left':'30px',
+				});
+			}else{
+				$('#voicesetting').css('display', 'inherit');
+				$('#send_box').css('margin-right','20px');
+				$('.col.s12.m12.l2.sendbox').css({
+					'padding-right':'0 0.75rem',
+					'padding-left':'0 0.75rem',
+				});
+			}
+		</script>
+	</body>
+</html>
