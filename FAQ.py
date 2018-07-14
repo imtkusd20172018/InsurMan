@@ -4,8 +4,7 @@
 # In[2]:
 
 
-import requests
-def getMessage(url):
+
     requests.get(url)
     res = requests.get(url)
     res.encoding='utf-8'
