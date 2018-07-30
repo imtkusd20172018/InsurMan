@@ -4,6 +4,7 @@
 # In[2]:
 
 
+import BeautifulSoup
 
     requests.get(url)
     res = requests.get(url)
