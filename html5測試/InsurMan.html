@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<meta charset="UTF-8">	
+<meta charset="UTF-8">
 <title>Insurman</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -11,41 +11,62 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <scrip src="http://code.jquery.com/jquery-3.3.1.js"></scrip>
 <link rel="stylesheet" type="text/css" href="CSS/InsurMan.css">
-<style type="text/css"> 
-body {  padding-top: 70px; padding-bottom: 70px;}
-</style>
 <script type="text/javascript">
 $(document).ready(function() {
     $("#home").click(function() {
-        $('html, body').animate({scrollTop: '-70px'}, 800);
+        $('html, body').animate({scrollTop:'0%'}, 800);
     });
 });
 $(document).ready(function() {
     $("#menu0").click(function() {
-        $('html, body').animate({scrollTop:'-70px' }, 800);
+        $('html, body').animate({scrollTop:'0%' }, 800);
     });
 });
 $(document).ready(function() {
     $("#menu1").click(function() {
-       $('html, body').animate({scrollTop:'600px' }, 800);
+       $('html, body').animate({scrollTop:'510vh' }, 800);
     });
 });
 $(document).ready(function() {
     $("#menu2").click(function() {
-        $('html, body').animate({scrollTop:'1200px' }, 800);
+        $('html, body').animate({scrollTop:'1037vh' }, 800);
     });
 });
 $(document).ready(function() {
     $("#menu3").click(function() {
-        $('html, body').animate({scrollTop:'1800px' }, 800);
+        $('html, body').animate({scrollTop:'1553vh' }, 800);
+    });
+});
+$(document).ready(function() {
+    $("#action-1").click(function() {
+        $('html, body').animate({scrollTop:'1553vh' }, 800);
+    });
+});
+$(document).ready(function() {
+    $("#action-2").click(function() {
+        $('html, body').animate({scrollTop:'1553vh' }, 800);
+    });
+});
+$(document).ready(function() {
+    $("#action-3").click(function() {
+        $('html, body').animate({scrollTop:'1553vh' }, 800);
+    });
+});
+$(document).ready(function() {
+    $("#action-4").click(function() {
+        $('html, body').animate({scrollTop:'1553vh' }, 800);
+    });
+});
+$(document).ready(function() {
+    $("#action-5").click(function() {
+        $('html, body').animate({scrollTop:'1553vh' }, 800);
     });
 });
 $(document).ready(function() {
     $("#menu4").click(function() {
-        $('html, body').animate({scrollTop:'2400px' }, 800);
+        $('html, body').animate({scrollTop:'2100vh' }, 800);
     });
 });                                 
-</script>
 </script>
 </head>
 <body>
@@ -62,8 +83,20 @@ $(document).ready(function() {
 		        <li><a href="#" id="menu0">首頁</a></li>
                 <li><a href="#a" id="menu1">關於InsurMan</a></li>
                 <li><a href="#b" id="menu2">問答專區</a></li>
-                <li><a href="#c" id="menu3">保險相關服務</a></li>
-                <li><a href="#d" id="menu4">聯絡我們</a></li>  
+                <li class="nav-item dropdown">
+					<li class="dropdown">
+						<a href="#c" class="dropdown-toggle"  id="menu3">保險相關服務<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a id="action-1" href="#c">商品A</a></li>
+							<li><a id="action-2" href="#c">商品B</a></li>
+							<li><a id="action-3" href="#c">商品C</a></li>
+							<li><a id="action-4" href="#c">商品D</a></li>
+							<li><a id="action-5" href="#c">商品E</a></li>
+						</ul>
+					</li>
+                </li>
+                <li><a href="#d" id="menu4">聯絡我們</a></li> 
 		    </ul>
 		    </span>   	  
 		</div>    
@@ -78,14 +111,22 @@ $(document).ready(function() {
 			<div class="A-0">About InsurMan</div>
 		</div>
 		<div class="section"  id="sec02">
-			<p id="B-0">圖片</p>
-			<p id="B-1">關於我們</p>
+		<div id="B-1"></div>		
+		<div class="embed-responsive embed-responsive-16by9">
+		<p id="B-0">
+		<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/L5-a0WJyJuM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>				
+		</iframe>
+		</p>
+		</div>		
 		</div>
 		<div class="section2" id="s02">
 		<div class="A-1">問答專區</div>
 		</div>
 		<div class="section"  id="sec03">
 			<p id="B-2"></p>
+			<input type="button" id="B-3">
+			<input type="text" name="問答" id="tt0" class="t0"><br/>
+			<input type="button" name="送出" class="t11"><br/>
 		</div>
 		<div class="section2" id="s03">
 			<div class="A-1">保險相關服務</div>
@@ -99,9 +140,11 @@ $(document).ready(function() {
 		<div class="t-1">
 		<div class="t-1-1">
 		</div>
-		<hr class="A1">		
+				
 		</div>
-		<div class="t-1-2"></div>
+		<div class="t-1-2">
+			<hr class="A1">	
+		</div>
 		<div class="T-0"></div>
 			<form  method="post" action="轉接收的PHP位置">
 				<input type="text" name="姓名" id="tt1" class="t1" placeholder="姓名"><br/>
@@ -116,7 +159,7 @@ $(document).ready(function() {
 	</content>
 	<footer>
 		<div class="BOTTOM">
-			<a href="#LINE"><img src="https://i.imgur.com/41sfpeP.png" width="40" height="40"  ></a>
+			<a href="#LINE"><img src="https://i.imgur.com/41sfpeP.png" width="40" height="40" ></a>
 			<a href="#FB"><img src="https://i.imgur.com/ZbhYZtv.png" width="40" height="40"></a>
 			<a href="#IG"><img src="https://i.imgur.com/b5abrkR.png" width="50" height="50"></a>
 		</div>

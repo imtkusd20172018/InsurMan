@@ -1,22 +1,37 @@
+html,body { 
+	height:100%; 
+	padding-top: 4.5% ;
+	margin: 0%;
+}
+html,content { 
+	height:100%; 
+	padding:0;
+	margin: 0 ;
+}
+input:focus{
+	outline:none;
+}
+textarea:focus{
+	outline:none;
+}
 .navbar-default{
 	background-color: #FFFFFF;
 	border-bottom:1px #B0B0B0 solid;
 }
+
 .navbar{
-    background-color: : #FFFFFF;
+    background-color:#FFFFFF;
 }
 .navbar .nav > li > a{
 	color: #59514D;	
-    background-color: #FFFFFF;
 }
 .navbar .nav >li >a:visited{
     color:#59514D ;
-    background-color: #FFFFFF;
 
 }
 .navbar .nav > li > a:hover {
     color: #EBBA4D;
-    background-color: #FFFFFF;
+
 }
 .navbar .nav >li >a:active{
     color: #EBBA4D;
@@ -30,97 +45,124 @@
 .nav .navbar-nav .navbar-right >li >a:active {
 	color: #EBBA4D;	
 }
-.navbar-fixed-top {
-min-height: 70px;
+.nav > li:visited .dropdown-toggle {
+	background-color: #FFFFFF;	
 }
+.nav > li:hover .dropdown-menu {
+	font-family:Microsoft JhengHei;
+    font-size:100%;
+    font-weight:bolder;
+	display: block;
+	background-color: #FFFFFF;
+	border:1px #B0B0B0 solid;
+	border-top:1px #FFFFFF solid;	
+}
+
+.navbar-fixed-top {
+min-height: 9.3%;
+}
+
 
 .section{
         position: relative;
         margin:0px auto;
         width: 90%;
-        height: 600px;
     }
     #sec01{
-        background-image: url( 'https://i.imgur.com/soelR4n.jpg' );
-        background-size: cover;
+        background-image:url( 'https://i.imgur.com/soelR4n.jpg');
+        background-size:cover;
         font-color:white;
+        height: 92.1%;
     }
     #sec02{
-        background:#E38EFF;
-        height: 540px;
+        background-color:white;
+        height: 83%;
         font-size: 100%;
         font-family: Microsoft JhengHei;
     }
     #sec03{
         background:#9F88FF;
-        height: 540px;
+        height: 83%;
     }
     #sec04{
         background: #FF7744;
-        height: 540px;
+        height: 83%;
     }
     #sec05{
         background:	#DEB887;
-        height: 540px;
+        height: 90%;
     }
 .section2{
         position: relative;
         margin:0px auto;
         width: 90%;
-        height: 60px;
+        height: 10%;
     }
-     #s01{
-
+     #s05{
+     	width: 100%;
     }
 .A-1{
 	position: absolute;
-	left: 30px;
+	left: 2%;
 	line-height: 60px;
-	font-size: 200%;
+	font-size: 230%;
 	font-family: Microsoft JhengHei;
 	letter-spacing:20px;
 }
 .A-0{
 	position: absolute;
-	left: 30px;
-	line-height: 60px;
-	font-size: 250%;
-	font-family: 'Raleway', sans-serif;
-	letter-spacing:20px;
+		left:2%;
+		line-height: 60px;
+		font-size: 200%;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing:20px;
 }
 #B-0{
 	position: absolute;
-	top: 60px;
-	left: 90px;
-	width:500px;
-	height:420px;
+	top: 6%;
+	left: 5%; 
+	width:45%;
+	height:50%;
 	background-color: #DEB887;
-	border:5px white solid;
+	box-shadow:4px 4px 12px black;
 	}
-	#B-1{
+#B-1{
 		position: absolute;
-		top: 60px;
-		left: 650px;
-		width:650px;
-		height:420px;
+		top: 20%;
+		left: 45%;
+		width:46%;
+		height:70%;
 		background-color: #FFFFFF;
-		border:5px white solid; 
+		border:2px #B0B0B0 solid;
+		border-radius :10px;
 	}
-	#B-2{
+#B-2{
  		position: relative;
         margin:0px auto;
-        top: 65px;
-		width:1100px;
-		height:420px;
-		background-color: #DEB887;
-		border:5px white solid; 
+        top: 5%;
+		width:70%;
+		height:80%;
+		background-color: white;
+		border:0px white solid;
+		border-radius: 10px; 
 	}
+#B-3{
+	position: absolute;
+	top: 87%;
+	left: 16.5%;
+	background-image:url(圖片網址);
+	width:4%;
+	height:10%;
+	border-radius: 50px;
+
+
+}	
 
 .BOTTOM{
    position:fixed;
    bottom:0;
    width:100%;
-   height:70px;
+   height:8%;
    background-color: white;
    display:  flex;
    align-items: center;
@@ -129,13 +171,11 @@ min-height: 70px;
 
 
 }
-img{
-	margin:10px;
-}
+
 .div-2{
 	position:absolute;		
-	top: 250px;
-	left: 460px;
+	top: 45%;
+	left: 32%;
 	font-family:'Montserrat', sans-serif;
 	font-size: 300%;
 	font-style: normal;
@@ -147,28 +187,28 @@ img{
 }
 .div-3{
 	position:absolute;		
-	top: 350px;
-	left: 420px;
-	font-family: 'Raleway', sans-serif;
+	top: 60%;
+	left: 23%;
+	font-family : 'Raleway', sans-serif;
 	display: block;
 	font-size: 250%;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: lighter;
 	line-height: 10px;
-	letter-spacing:10px;
+	letter-spacing:15px;
 	color:white;
 }
 .div-1 {
 	position: fixed;
-	top: 3px;
-	left: 30px;
+	top: -1%;
+	left: 2%;
 }
 .div-d{
-	top: 13px;
-    right: 25px;
-	font-family:Microsoft JhengHei;
-    font-size:115%;
+	top: 1%;
+    right: 1.8%;
+	font-family:'Microsoft JhengHei', sans-serif;
+    font-size:110%;
     position: fixed;
     letter-spacing:2px;
     font-weight:bolder;
@@ -179,8 +219,8 @@ img{
 	background-color: #4CAF50; /* Green */
 	border: none;
 	color: white;
-	padding: 10px 16px;
-	font-size:143%;		
+	padding: 5% 5%;
+	font-size:130%;		
 	font-family: fantasy;		
 	font-weight: 200;
 	font-style: normal;
@@ -203,10 +243,6 @@ img{
 		background-color: #7B736F;
 		color: white;
 	}
-#content{
-	color:#ccc; 
-
-}
 #tt{
 	color:#ccc;
 
@@ -214,81 +250,95 @@ img{
 #aa{
 
 }
+.t0{
+	position: absolute;
+	top: 89%;
+	left: 23%;
+	width:55%;
+	height:7%;
+	border-radius:50px;
+	border:1px black solid;
+	padding-left: 2%;
+	border:0
+}
+.t11{
+	position: absolute;
+	top: 89.5%;
+	left: 80%;
+	width:5%;
+	height:6%;
+	border-radius:50px;
+}
 .t1{
-	width:170px;
-	height:30px;
-	position: relative;
-	top: 175px;
-	left: 750px;
+	width:12%;
+	height:6%;
+	position: absolute;
+	top: 31%;
+	left: 54%;
 }
 .t2{
-	width:350px;
-	height:30px;
-	position: relative;
-	top: 185px;
-	left: 750px;
+	width:19%;
+	height:6%;
+	position: absolute;
+	top: 31%;
+	left: 67%;
 }
 .t3{
-	width:170px;
-	height:30px;
-	position: relative;
-	top: 115px;
-	left: 930px;
+	width:14%;
+	height:6%;
+	position: absolute;
+	top: 38.5%;
+	left: 53%;
 }
 .t4{
-	width:400px;
-	height:190px;
-	position: relative;
-	top: 170px;
-	left: 750px;
+	width:35%;
+	height:30%;
+	position: absolute;
+	top: 46%;
+	left: 52%;
 }
 .t5{
-	width:50px;
-	height:30px;
-	position: relative;
-	top: 155px;
-	left: 1100px;
+	width:7%;
+	height:6%;
+	position: absolute;
+	top: 77%;
+	left: 80%;
 }
 .t-1{
 	position: absolute;
-	top: 80px;
-	left: 550px;
-	width:700px;
-	height:420px;
-	border:3px white solid;
-	border-left:100px solid transparent;
- 	border-bottom:420px solid white;
+	top:15%;
+	left: 40%;
+	width:53%;
+	border:0.3vw white solid;
+	border-left:22vh solid transparent;
+ 	border-bottom:58vh solid white;
 }
 .t-1-1{
 	position: absolute;
-	top: 1px;
-	left: -95px;
-	width:690px;
-	height:300px;
-	border-left:100px solid transparent;
- 	border-bottom:415px solid #DEB887;
+	top: 2%;
+	left: -25%;
+	width:125%;
+	border-left:22vh solid transparent;
+ 	border-bottom:57.3vh solid #DEB887;
 }
 .t-1-2{
  
 }
 .T-0{
 	position: absolute;
-	top: 40px;
-	left: 90px;
-	width:650px;
-	height:420px;
-	border-right:100px solid transparent;
- 	border-top:420px solid white;
+	top: 7%;
+	left: 7%;
+	width:50%;
+	border-right:20vh solid transparent;
+ 	border-top:60vh solid white;
 }
+
+
 .A1{
-	position: relative;
-	top: 40px;
-	left: -20px;
-	border:1px white solid; 
-	height:0px; 
-	width: 450px;
+	position:absolute;
+	top: 23%;
+	left: 25%;
+	border:0.1vw white solid; 
+	width: 50%;
 	background-color: white;
-
-	/* IE6 */
-
 }
