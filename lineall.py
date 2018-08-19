@@ -310,14 +310,14 @@ def handle_message(event):
 
     x = random.randint(0,2)
 
-    if re.findall('笑話',event.message.text)[0] == '笑話':
+    if re.findall('笑話',event.message.text)  == '笑話':
         line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=list1[x]+"\n"+list2[x]))
             
     
     #請問本公司之續次保費繳費方式有哪些？     
-    elif re.findall('續',event.message.text)[0] == '續':
+    elif re.findall('續',event.message.text)  == '續':
         if re.findall('保費|保險費',event.message.text)[0] == '保費|保險費':
             if re.findall('繳',event.message.text)[0] == '繳':
                 line_bot_api.reply_message(
