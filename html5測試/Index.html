@@ -20,7 +20,17 @@
 <script type="text/javascript" src="js/Insurman.panel.js"></script>
 <script type="text/javascript" src="js/Insurman.calculate.js"></script>
 <script type="text/javascript">
-
+$(window).load(function(){
+			$(".col-3 input").val("");
+			
+			$(".input-effect input").focusout(function(){
+				if($(this).val() != ""){
+					$(this).addClass("has-content");
+				}else{
+					$(this).removeClass("has-content");
+				}
+			})
+		});
 </script>
 </head>
 <body>
@@ -81,7 +91,7 @@
 		<div class="section"  id="sec03">
 			<p id="B-2"></p>
 			<input type="button" id="B-3">
-			<input type="text" name="問答" id="tt0" class="t0"><br/>
+			<input type="text1" name="問答" id="tt0" class="t0"><br/>
 			<input type="button" name="送出" class="t11"><br/>
 		</div>
 		<div class="section2" id="s03">
@@ -272,11 +282,20 @@
 		<h1 id="pageone-4-word1">IRR Calculator</h1>
 	    <p id="pageone-4-word2">Please enter the information,we will show your IRR value.</p>
 	    <p id="pageone-4-word3">領回時間（年） </p>
-	    <input id="yearInput" type="text"><br>
+	    <div class="col-1">
+		    <input class="effect-1"  id="yearInput" type="text">
+		    <span class="focus-border"></span>
+		</div>
 	    <p id="pageone-4-word4">躉繳 </p>
-	    <input id="depositInput" type="text"><br><br>
+	    <div class="col-2">
+		    <input class="effect-2"  id="depositInput" type="text">
+		    <span class="focus-border"></span>
+		</div>
 	    <p id="pageone-4-word5">期滿領回</p>
-	    <input id="receiveInput" type="text"><br><br>
+	    <div class="col-3">
+		    <input class="effect-3"  id="receiveInput" type="text">
+		    <span class="focus-border"></span>
+		</div>
 	    <button type="button" id="btnClick" onClick="calculateIRR()">計算</button><br>
 	    <p id="pageone-4-word6">The IRR value:</p>
 	    <div id="IRROutput"></div>
@@ -297,14 +316,22 @@
 		</div>
 		<div class="T-0"></div>
 			<form  method="post" action="轉接收的PHP位置">
-				<input type="text" name="姓名" id="tt1" class="t1" placeholder="姓名"><br/>
-				<input type="text" name="電子信箱" id="tt2" class="t2" placeholder="電子信箱"><br/>
-				<input type="text" name="類別" id="tt3" class="t3" placeholder="類別"><br/>
+
+				<input type="text1" name="姓名" id="tt1" class="t1" placeholder="姓名"><br/>
+				<input type="text1" name="電子信箱" id="tt2" class="t2" placeholder="電子信箱"><br/>
+				<input type="text1" name="類別" id="tt3" class="t3" placeholder="類別"><br/>
 				<textarea id="content" name="content" class="t4" placeholder="輸入所遇到的問題、困難或是建議的地方....." /></textarea>
 				<input name="backurl" value="傳送的網址" type="hidden"><br/>
 				<input name="lang" value="zh-TW" type="hidden"><br/>
 				<input id="aa" class="t5" name="submit" value="確認" type="submit"><br/>
 			</form>
+			<div class="col-4 input-effect">
+		        	<input class="effect-19" name="姓名" id="tt0" type="text" placeholder="">
+		            <label >姓名</label>
+		            <span class="focus-border">
+		            	<i></i>
+		            </span>
+		    </div>
 		</div>
 	</content>
 	<footer>
