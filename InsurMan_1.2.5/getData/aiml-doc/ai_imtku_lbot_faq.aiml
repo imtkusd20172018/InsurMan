@@ -2,8 +2,8 @@
   <aiml version="1.0">
 
     <category>
-        <pattern>請問本公司之續次保費繳費方式有哪些？</pattern>
-        <template>本公司之續次保費繳費方式：人員收費、金融機構轉帳、信用卡代繳、保戶自行繳費(如郵撥..)</template>
+        <pattern>客服電話</pattern>
+        <template>金融卡緊急掛失：(02)2314-6633 <br />免付費顧客申訴：0800-231590 <br />信用卡服務：0800-089369 (02)2314-6633 <br />房貸客服專線：0800-282-099</template>
     </category>
     <category>
         <pattern>服務據點</pattern>
