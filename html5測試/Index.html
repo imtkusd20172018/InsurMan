@@ -9,9 +9,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<scrip src="http://code.jquery.com/jquery-3.3.1.js"></scrip>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 <link rel="stylesheet" type="text/css" href="CSS/InsurMan.css">
-<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Quicksand:500|Raleway:500i" rel="stylesheet">
@@ -20,17 +19,6 @@
 <script type="text/javascript" src="js/Insurman.panel.js"></script>
 <script type="text/javascript" src="js/Insurman.calculate.js"></script>
 <script type="text/javascript">
-$(window).load(function(){
-			$(".col-3 input").val("");
-			
-			$(".input-effect input").focusout(function(){
-				if($(this).val() != ""){
-					$(this).addClass("has-content");
-				}else{
-					$(this).removeClass("has-content");
-				}
-			})
-		});
 </script>
 </head>
 <body>
@@ -52,11 +40,9 @@ $(window).load(function(){
 						<a href="#c" class="dropdown-toggle"  id="menu3">保險相關服務<b class="caret"></b>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a id="action-1" href="#c">商品A</a></li>
-							<li><a id="action-2" href="#c">商品B</a></li>
-							<li><a id="action-3" href="#c">商品C</a></li>
-							<li><a id="action-4" href="#c">商品D</a></li>
-							<li><a id="action-5" href="#c">商品E</a></li>
+							<li><a id="action-1" href="#c">人身保險</a></li>
+							<li><a id="action-2" href="#c">產物保險</a></li>
+							<li><a id="action-3" href="#c">IRR計算機</a></li>
 						</ul>
 					</li>
                 </li>
@@ -70,21 +56,25 @@ $(window).load(function(){
 		<div class="section"  id="sec01">
 			<img id="img0" src="https://i.imgur.com/X7ybikF.png">
 			<p class="div-2 animated fadeInLeft" style="animation-duration: 5s">INSURMAN</p>
-			<p class="div-3 animated fadeInUp" style="animation-duration: 8s">ALWAYS BE HERE FOR YOU</p>
+			<p class="div-3 animated fadeInUp" style="animation-duration: 8s">ALWAYS BE WITH YOU</p>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 		</div>
+		<hr id="hr01" />
 		<div class="section2" id="s01">
 			<div class="A-0">About InsurMan</div>
 		</div>
 		<div class="section"  id="sec02">
-		<div id="B-1"></div>		
-		<div class="embed-responsive embed-responsive-16by9">
-		<p id="B-0">
-		<iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/L5-a0WJyJuM" frameborder=no allow="autoplay; encrypted-media" allowfullscreen>				
-		</iframe>
-		</p>
+		<div id="B-4">
+			<img id="B-4-4" src="https://i.imgur.com/6QZ9d4L.png" >
+		</div>
+		<video id="B-0" controls>
+		<source src="Yif-Magic.mp4" type="video/mp4"></source>
+		</video>	
+		<div>
+			<img id="B-5" src="https://i.imgur.com/BTaSEjD.png">
 		</div>		
 		</div>
+		<hr id="hr02" />
 		<div class="section2" id="s02">
 		<div class="A-1">問答專區</div>
 		</div>
@@ -94,6 +84,7 @@ $(window).load(function(){
 			<input type="text1" name="問答" id="tt0" class="t0"><br/>
 			<input type="button" name="送出" class="t11"><br/>
 		</div>
+		<hr id="hr03" />
 		<div class="section2" id="s03">
 			<div class="A-1">保險相關服務</div>
 		</div>
@@ -301,6 +292,7 @@ $(window).load(function(){
 	    <div id="IRROutput"></div>
 		</div>
 		</div>
+		<hr id="hr04" />
 		<div class="section2" id="s04">
 			<div class="A-0">Contact</div>
 		</div>
@@ -316,29 +308,21 @@ $(window).load(function(){
 		</div>
 		<div class="T-0"></div>
 			<form  method="post" action="轉接收的PHP位置">
-
 				<input type="text1" name="姓名" id="tt1" class="t1" placeholder="姓名"><br/>
 				<input type="text1" name="電子信箱" id="tt2" class="t2" placeholder="電子信箱"><br/>
 				<input type="text1" name="類別" id="tt3" class="t3" placeholder="類別"><br/>
 				<textarea id="content" name="content" class="t4" placeholder="輸入所遇到的問題、困難或是建議的地方....." /></textarea>
 				<input name="backurl" value="傳送的網址" type="hidden"><br/>
 				<input name="lang" value="zh-TW" type="hidden"><br/>
-				<input id="aa" class="t5" name="submit" value="確認" type="submit"><br/>
+				<input id="tt4" class="t5" name="submit" value="確認" type="submit"><br/>
 			</form>
-			<div class="col-4 input-effect">
-		        	<input class="effect-19" name="姓名" id="tt0" type="text" placeholder="">
-		            <label >姓名</label>
-		            <span class="focus-border">
-		            	<i></i>
-		            </span>
-		    </div>
 		</div>
 	</content>
 	<footer>
 		<div class="BOTTOM">
-			<a href="#LINE"><img src="https://i.imgur.com/41sfpeP.png" width="40" height="40" ></a>
-			<a href="#FB"><img1 src="https://i.imgur.com/ZbhYZtv.png" width="40" height="40"></a>
-			<a href="#IG"><img src="https://i.imgur.com/b5abrkR.png" width="50" height="50"></a>
+			<a href="#LINE"><img  width="40" height="40" ></a>
+			<a href="#FB"><img width="40" height="40"></a>
+			<a href="#IG"><img  width="40" height="40"></a>
 		</div>
 	</footer>
 </body>
