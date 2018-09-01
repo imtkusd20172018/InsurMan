@@ -21,17 +21,6 @@
     <script type="text/javascript" src=".\statics\Insurman.panel.js"></script>
     <script type="text/javascript" src=".\statics\Insurman.calculate.js"></script>
     <script type="text/javascript">
-        $(window).load(function() {
-            $(".col-3 input").val("");
-
-            $(".input-effect input").focusout(function() {
-                if ($(this).val() != "") {
-                    $(this).addClass("has-content");
-                } else {
-                    $(this).removeClass("has-content");
-                }
-            })
-        });
     </script>
 </head>
 
@@ -77,17 +66,17 @@
         <div class="section2" id="s01">
             <div class="A-0">About InsurMan</div>
         </div>
-        <div class="section" id="sec02">
-            <div id="B-4">
-                <img id="B-4-4" src="https://i.imgur.com/6QZ9d4L.png">
-            </div>
+        <div class="section"  id="sec02">
+        <div id="B-4">
+            <img id="B-4-4" src="https://i.imgur.com/zccnUlE.png" >
+        </div>  
+        <div>
+            <img id="B-5" src="https://i.imgur.com/ATUXiAE.png">
+        </div>
+        <div id="B-6"></div>
             <video id="B-0" controls>
-                <source src="Yif-Magic.mp4" type="video/mp4">
-                </source>
-            </video>
-            <div>
-                <img id="B-5" src="https://i.imgur.com/BTaSEjD.png">
-            </div>
+        <source src="Yif-Magic.mp4" type="video/mp4"></source>
+        </video>        
         </div>
         <hr id="hr02" />
         <div class="section2" id="s02">
@@ -335,9 +324,9 @@
     </content>
     <footer>
         <div class="BOTTOM">
-            <a href="#LINE"><img width="40" height="40"></a>
-            <a href="#FB"><img width="40" height="40"></a>
-            <a href="#IG"><img width="40" height="40"></a>
+            <a href="#LINE"><img id="BOTTOM-pic-1" src="https://i.imgur.com/FvbIwLf.png" ></a>
+            <a href="#FB"><img id="BOTTOM-pic-2" src="https://i.imgur.com/lPrLv6A.png"></a>
+            <a href="#IG"><img id="BOTTOM-pic-3" src="https://i.imgur.com/LMz7tFo.png" ></a>
         </div>
     </footer>
 </body>

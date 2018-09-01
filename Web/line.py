@@ -6,6 +6,9 @@ from getData.oilPrice import getOilPrice
 from getData.golden import getGolden
 from getData.Currency import getCurrency
 from getData.data import getSite,getStock,getStocNum
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 import re
 from linebot import (
@@ -19,7 +22,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-
+# coding=UTF-8
 
 
 
@@ -40,7 +43,7 @@ def send_img(path):
 @application.route('/statics/<path:path>')
 def send_statics(path):
     return send_from_directory('statics', path)
-
+# coding=UTF-8
 @application.route('/_add_numbers')
 def add_numbers():
     query = request.args.get('query')
@@ -121,6 +124,7 @@ def callback():
         abort(400)
 
     return 'ok'
+    # coding=UTF-8
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     reply = "我不知道你在說什麼"
