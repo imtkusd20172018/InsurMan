@@ -2,7 +2,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="stylesheet" href="css/all.css">
+    
     <script src="./statics/jquery.js"></script>
     <script src="./statics/all.js"></script>
     <!--Import materialize.css-->
@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link rel="stylesheet" href=".\statics\index.min.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
+    <title>Aiwisfin</title>
     <style>
         .button:link, .button:visited {
             font-family: "微軟正黑體";
@@ -23,6 +23,11 @@
             text-decoration: none;
             display: inline-block;
             border-radius: 5px;
+        }
+        #home_imformation {
+            font-family: "微軟正黑體";
+            background-color: white;
+            color: #60646c;
         }
 
         /*.button:hover, .button:active {
@@ -77,14 +82,14 @@
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><img src="./img/outline_menu_black_48dp.png" border="0" style="width:50px;height:50px;margin-top:7.5px"></a>
                     <ul class="right hide-on-med-and-down">
                         <li>
-                            <a href="/" style="font-family:'微軟正黑體';font-size:large;color: #60646c; ">首頁</a>
+                            <a href="/" style="font-family:微軟正黑體;background-color: white;color: #60646c;" >首頁</a>
                         </li>
 
                         <li>
-                            <a href="/portfolio" style="font-family:'微軟正黑體';font-size:large;color: #60646c;">投資組合最佳化</a>
+                            <a href="/portfolio" style="font-family:微軟正黑體;background-color: white;color: #60646c;">投資組合最佳化</a>
                         </li>
                         <li>
-                            <a href="/chat" style="font-family:'微軟正黑體';font-size:large;color: #60646c;">聊天機器人</a>
+                            <a href="/chat"style="font-family:微軟正黑體;background-color: white;color: #60646c;">聊天機器人</a>
                         </li>
 
 
@@ -127,9 +132,73 @@
             </div>
         </nav>
     </div>
+
+    <img src="./img/portfolio.jpeg" width="100%" />
    
-            <img src="./img/portfolio.jpeg" width="100%" />
-    
+        <div class="card" id="home_imformation">
+            <div class="container">
+                <div>
+                    <div style="display:inline-block;margin-left:30px">
+                        <img src="./img/baseline_account_circle_black_36dp.png" />
+                        <h5><b>我們會了解一些關於你的訊息</b></h5>
+                        <h6>
+                            <pre>您的理財規劃?您為什麼想投資?您理想的假期?首付?退休生活?                     </pre>
+                        </h6>
+
+                    </div>
+                    <div style="display:inline-block;vertical-align:top;margin-left:30px">
+                        <img src="./img/baseline_speaker_notes_black_36dp.png" />
+                        <h5><b>即時智慧對話</b></h5>
+                        <h6>
+                            歡迎您與人工智慧機器人暢談!
+                        </h6>
+                    </div>
+
+                </div>
+                <div>
+                    <div style="display:inline-block;margin-left:30px ">
+                        <img src="./img/baseline_data_usage_black_36dp.png" />
+                        <h5><b>我們將為你建立一個投資組合</b></h5>
+                        <h6>
+                            <pre>根據您的計畫我們將打造您專屬的投資計畫，使用我們的技術打造客製化的投資組合。  </pre>
+                        </h6>
+                    </div>
+                    <div style="display:inline-block;vertical-align:top;margin-left:30px">
+                        <img src="./img/baseline_search_black_36dp.png" />
+                        <h5><b>即時金融資訊</b></h5>
+                        <h6>
+                            查詢即時金融資訊，包含股票，石油，黃金等價格。
+                        </h6>
+                    </div>
+                </div>
+                <div>
+                    <div style="display:inline-block;margin-left:30px">
+                        <img src="./img/baseline_signal_cellular_alt_black_36dp.png" />
+                        <h5><b>然後實現我們的魔法</b></h5>
+                        <h6>
+                            <pre>我們將持續努力。一旦您完成設定，我們將持續管理您的投資組合。                 </pre>
+                        </h6>
+                    </div>
+                    <div style="display:inline-block;vertical-align:top;margin-left:30px">
+                        <img src="./img/baseline_adjust_black_36dp.png" />
+                        <h5><b>目標</b></h5>
+                        <h6>
+                            聚焦理財，放眼未來。
+                        </h6>
+                    </div>
+                </div>
+            </div>
+           
+            
+
+           
+
+        </div>
+
+
+
+   
+
 
 
     <script>

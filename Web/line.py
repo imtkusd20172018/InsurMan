@@ -7,7 +7,6 @@ from getData.golden import getGolden
 from getData.Currency import getCurrency
 from getData.data import getSite,getStock,getStocNum
 
-
 import re
 from linebot import (
     LineBotApi, WebhookHandler
@@ -16,8 +15,7 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import *
-import requests
-from bs4 import BeautifulSoup
+
 
 
 
@@ -31,7 +29,7 @@ handler = WebhookHandler('7d1eb6e2a43abda7b551bee1bcb0c20b')
 
 @application.route("/")
 def index():
-    return render_template('Index.html')
+    return render_template('index.html')
 
 @application.route('/img/<path:path>')
 def send_img(path):
@@ -121,7 +119,6 @@ def callback():
         abort(400)
 
     return 'ok'
-
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     reply = "我不知道你在說什麼"

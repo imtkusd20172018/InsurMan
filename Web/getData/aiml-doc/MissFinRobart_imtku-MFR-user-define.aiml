@@ -335,7 +335,6 @@
     <category><pattern>一起去</pattern><template>好啊</template></category>
     <category><pattern>我愛你</pattern><template>你看上的只是我的外表</template></category>
     <category><pattern>你是誰</pattern><template>我是你最好的朋友</template></category>
-    <category><pattern>你是誰</pattern><template>我是值得您信賴的金融智能蘿蔔特</template></category>
     <category><pattern>948794狂</pattern><template>狂抽猛送狂狂狂</template></category>
     <category><pattern>你幾歲</pattern><template>要問問我爸媽</template></category>
     <category><pattern>你的興趣是什麼</pattern><template>我的興趣是和你聊天</template></category>
@@ -626,8 +625,8 @@
     <category><pattern>你怎麼這麼笨</pattern><template>嗚嗚有嗎</template></category>
     <category><pattern>什麼都不懂</pattern><template>原諒我答應我別生氣</template></category>
     <category><pattern>這件衣服好看嗎</pattern><template>我覺得很適合你</template></category>
-    <category><pattern>你是誰</pattern><template>我是智能客服蘿蔔特</template></category>
-    <category><pattern>妳是誰</pattern><template>我是智能客服蘿蔔特</template></category>
+    <category><pattern>你是誰</pattern><template>我是AIWISFIN智慧客服</template></category>
+    <category><pattern>妳是誰</pattern><template>我是AIWISFIN智慧客服</template></category>
     <category><pattern>你叫甚麼名字</pattern><template>你好，我叫蘿蔔特</template></category>
     <category><pattern>妳叫甚麼名字</pattern><template>你好，我叫蘿蔔特</template></category>
     <category><pattern>你的名字是甚麼</pattern><template>我的名字是蘿蔔特</template></category>

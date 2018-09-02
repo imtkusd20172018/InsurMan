@@ -34,7 +34,9 @@
     <Content Include="templates\1C.html" />
     <Content Include="templates\1E.html" />
     <Content Include="templates\2C.html" />
+    <Content Include="templates\2C_1.html" />
     <Content Include="templates\2E.html" />
+    <Content Include="templates\2E_1.html" />
     <Content Include="templates\css\materialize.css" />
     <Content Include="templates\css\materialize.min.css" />
     <Content Include="templates\index_en.html" />

@@ -17,7 +17,7 @@
     <div class="navbar-fixed">
         <nav class=" white z-index-2">
             <div class="container">
-               <div class="nav-wrapper">
+                <div class="nav-wrapper">
                     <a href="#!" class="brand-logo"><img class="brand-logo" src="./img/AIWISFIN.png" /></a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><img src="./img/outline_menu_black_48dp.png" border="0" style="width:50px;height:50px;margin-top:7.5px"></a>
                     <ul class="right hide-on-med-and-down">
@@ -74,7 +74,7 @@
 
 
 
-    <div id="chatbox_content" class="card grey lighten-5">
+    <div id="chatbox_content" class="card " style="border-style:solid;border-color: #60646c">
         <div class="container">
             <div class="panel panel-primary">
                 <div class="panel-body">
@@ -85,7 +85,7 @@
                                     <div class="col s10 m10 l10 chat-body clearfix left">
                                         <img src=".\img\AIWISFIN.png" alt="User Avatar" class="mfr circle responsive-img" align="left">
                                         <p class="left">
-                                            Welcome to use Aiwisfin Chatbot!How can I help you?
+                                            Welcome!
                                         </p>
                                     </div>
                                 </div>
@@ -97,25 +97,22 @@
         </div>
     </div>
 
-    <div id="inputBox_content" class="card">
-        <div class="col s12 m12 l8">
-            <form action="/">
-                <div id="input_box" class="card">
-                    <div id="voiceBtn" class="btn-floating waves-effect waves-light black" style="display:inline-block">
-                        <img src="./img/baseline_mic_white_48dp.png" style="height:36px;width:36px;display:inline" alt="語音辨識">
-                    </div>
-                    <div class="input-field" style="display:inline-block">
-                        <input placeholder="..." id="input_text" type="text" class="validate" name="query">
-                    </div>
-
+    <div class="col s12 m12 l8">
+        <form action="/">
+            <div id="input_box" class="card" style="">
+                <div id="voiceBtn" class="btn-floating waves-effect waves-light black" style="display:inline-block">
+                    <img src="./img/baseline_mic_white_48dp.png" style="height:36px;width:36px;display:inline" alt="語音辨識">
                 </div>
-                <div align="center">
-                    <a id="sendbox" class="btn-floating waves-effect waves-light grey"><img src="./img/baseline_send_black_36dp.png" alt="發送" style="width:36px;height:36px;display:inline"></a>
+                <div class="input-field white" style="display:inline-block">
+                    <input placeholder="..." id="input_text" type="text" class="validate" name="query">
                 </div>
-            </form>
-        </div>
-
+                <div align="center" style="display:inline-block">
+                    <a id="sendbox" class="btn-floating waves-effect waves-light white "><img src="./img/baseline_send_black_36dp.png" alt="發送" style="width:36px;height:36px;display:inline"></a>
+                </div>
+            </div>
+        </form>
     </div>
+
 
 
 

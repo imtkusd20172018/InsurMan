@@ -1,143 +1,147 @@
-var $imgs = $('.container .img-holder');
-var l = $imgs.length;
-var radius = 400;
+window.onload = function speak(){
+	var synth = window.speechSynthesis;
+    var utterThis = new SpeechSynthesisUtterance('您好');
+    utterThis.volume = 1;
+	utterThis.pitch = 1;
+    utterThis.rate = 1.5;
+    utterThis.lang = 'zh';
+	synth.speak(utterThis);
+};
 
 
-TweenMax.set($('.container'), {
-				css: {
-					transformStyle: 'preserve-3d',
-					perspective: 800,
-					perspectiveOrigin: '50% 50%' 
-				}
-			});  
-
-var posArray = [];
-var totalImgToView = 5;
-var imgMinus = 0.6301;
-var angle = 0;
-$imgs.each(function(i, item){
-     
-    angle = i * 0.63; 
-  //console.log('angle ',angle);   
-    var zPos = - Math.abs(angle * (100 ));  
-     
-   var xPos = Math.sin (angle) * radius;    
-  posArray.push({x:xPos,z:zPos,angle:angle});
-  var imgAlpha = (Math.ceil(0.5 * totalImgToView) * imgMinus) * 100;
-    //imgAlpha = Math.abs(zPos) < imgAlpha ? 1 : 0;
-  TweenMax.to(item,1, {x:xPos,z:zPos,ease:Expo.easeOut,autoAlpha:0}); 
-});   
-        
- 
-var curImgViewIndex = 0;
-var targetImgViewIndex = 0;
-var curIntervalId = 0; 
-var scrollbarDragging = false;
-
-function rotate(){
-   var minusVal = targetImgViewIndex - curImgViewIndex > 0 ? -0.6301 : 0.6301; 
-  
-  var easeObj;
-  var tweenTime;
-  if(Math.abs(targetImgViewIndex - curImgViewIndex) === 1){
-    easeObj = Quint.easeOut;
-    tweenTime = 1;
-  }else {
-    easeObj = Linear.easeNone;
-    tweenTime = 0.15;
-  }
-  
-  $imgs.each(function(i, item){  
-    var pos = posArray[i];                       
-    pos.angle = pos.angle + minusVal ;  //(0.6301*0.06);  
-    var angleDistance = pos.angle * 100;
-    var zPos = - Math.abs(angleDistance);
-    var xPos =  Math.sin (pos.angle) * radius;   
-    var imgAlpha = (Math.ceil(0.5 * totalImgToView) * imgMinus) * 100;
-    
-    imgAlpha = Math.abs(zPos) < imgAlpha ? 1 : 0; 
-    var rotDeg = Math.round(angleDistance) >= 0 ? -30 : 30;
-    rotDeg = Math.round(angleDistance) === 0 ? 0 : rotDeg;
-       
-    
-    TweenMax.to(item, tweenTime,  {x:xPos,z:zPos,ease:easeObj,autoAlpha:imgAlpha,rotationY:rotDeg});
-         
-   });    
-  minusVal > 0 ? curImgViewIndex-- : curImgViewIndex++; 
-  
-  if(curImgViewIndex === targetImgViewIndex){
-    clearInterval(curIntervalId);
-  }
-  
-  
-}    
- 
-function showImgAt(index){
-  targetImgViewIndex = index;
-  if(targetImgViewIndex === curImgViewIndex){
-    return;
-  }
-  clearInterval(curIntervalId);
-  curIntervalId = setInterval(function(){
-    rotate();
-  },150);
-  
-  //update scrollbar 
-  if(!scrollbarDragging){
-    var l = $imgs.length - 1;
-    if(targetImgViewIndex > l){
-      return;
-    }
-    var curScrollX = Math.abs(Math.round(targetImgViewIndex * (702 / l ) ) );    
-    var tweenTime = Math.abs((targetImgViewIndex - curImgViewIndex) * 0.2);
-    TweenMax.to($('.scroller'),tweenTime,{x:curScrollX,ease:Sine.easeOut});
-  }
+$(".button-collapse").sideNav();
+resize()
+window.onresize = resize;
+function resize(){
+ $('.card.brown.lighten-2').height($( window ).height()-160);
+ if ($( window ).width() >=993){
+	$('#chatbox').height($( window ).height()-255);
+	$('#chatbox_content').height($( window ).height()-255);
+	$('.panel-body').height($( window ).height()-275);
+ }else {
+	$('#chatbox').height($( window ).height()-214);
+	$('#chatbox_content').height($( window ).height()-214);
+	$('.panel-body').height($( window ).height()-234);
+ }
 }
+var query = ''
+var date1 = new Date();
+var date2 = new Date();
 
- 
-//CONTROLLER UPDATE
-var $input = $('.controller input');
-$input.keyup(function(e){
-  if(e.keyCode === 13){
-    showImgAt(parseInt($input.val()))
-  }
+$( document ).ready(function() {
+	if (document.images) {
+		var img1 = new Image();
+		img1.src = "/img/user.png";
+	}
+
+	var synth = window.speechSynthesis;
+	var state = 0;
+
+	function speak(inputTxt){
+	  if(inputTxt !== ''){
+		var utterThis = new SpeechSynthesisUtterance(inputTxt);
+		utterThis.pitch = 1;
+		utterThis.rate = 1;
+		synth.speak(utterThis);
+	  }
+	}
+
+	var request = function(e) {
+		state = 0;
+		query = $('#input_text').val();
+		$('#input_text').val('');
+        $(".chat").append('<li class="clearfix"><div class="message row"></div><div class="col s10 m10 l10 chat-body clearfix right"><img src="/img/user.png" alt="User Avatar" class="mfr circle responsive-img" align="right"><p class="right">' + query + '</p></div></li>');
+		$(".panel-body").stop().animate({
+			scrollTop: $(".panel-body")[0].scrollHeight
+		}, 1000);
+		function response(){
+			if (state == 0){
+				speak('請稍後')
+                $(".chat").append('<li class="clearfix"><div class="message row"></div><div class="col s10 m10 l10 chat-body clearfix left"><img src="/img/AIWISFIN.png" alt="User Avatar" class="mfr circle responsive-img" align="left"><p class="left">請稍後</p></div></li>');
+				$(".panel-body").stop().animate({
+					scrollTop: $(".panel-body")[0].scrollHeight
+				}, 1000);}
+		}
+		setTimeout(response, 1000);
+	};
+
+	var submit_form = function(e) {
+		$.getJSON($SCRIPT_ROOT + '/_add_numbers', {
+			query: query,
+		}, function(data) {
+			speak(data.result)
+            $(".chat").append('<li class="clearfix"><div class="message row"></div><div class="col s10 m10 l10 chat-body clearfix left"><img src="/img/AIWISFIN.png" alt="User Avatar" class="mfr circle responsive-img" align="left"><p class="left">' + data.result + '</p></div></li>');
+			$(".panel-body").stop().animate({
+				scrollTop: $(".panel-body")[0].scrollHeight
+			}, 2000);
+			$('input[name=query]').select();
+			state = 1;
+		});
+		return false;
+	};
+
+	$('a#sendbox').bind('click', function() {
+		request();
+		submit_form();
+	});
+
+	$('input[type=text]').bind('keydown', function(e) {
+		if (e.keyCode == 13) {
+			request();
+			submit_form(e);
+			e.preventDefault();
+		}
+	});
+
+	$('input[name=query]');
+	var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+	var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent;
+
+	function testSpeech() {
+		$('#voiceBtn').disabled = true;
+		$('#voice_icon').css({
+			transition: 'color 1s ease',
+			color:'#c21830',
+		});
+
+		var recognition = new SpeechRecognition();
+		recognition.lang = 'zh-Hant-TW';
+		recognition.interimResults = false;
+		recognition.maxAlternatives = 1;
+
+		recognition.start();
+
+		recognition.onresult = function(event) {
+			// The SpeechRecognitionEvent results property returns a SpeechRecognitionResultList object
+			// The SpeechRecognitionResultList object contains SpeechRecognitionResult objects.
+			// It has a getter so it can be accessed like an array
+			// The first [0] returns the SpeechRecognitionResult at position 0.
+			// Each SpeechRecognitionResult object contains SpeechRecognitionAlternative objects that contain individual results.
+			// These also have getters so they can be accessed like arrays.
+			// The second [0] returns the SpeechRecognitionAlternative at position 0.
+			// We then return the transcript property of the SpeechRecognitionAlternative object
+			var speechResult = event.results[0][0].transcript;
+			$('#input_text').val(speechResult);
+			request();
+			submit_form();
+			console.log('Confidence: ' + event.results[0][0].confidence);
+		}
+
+		recognition.onspeechend = function() {
+			recognition.stop();
+			$('#voice_icon').css('color', 'white', '!important');
+			$('#voiceBtn').disabled = false;
+		}
+
+		recognition.onerror = function(event) {
+			$('#voiceBtn').disabled = false;
+			$('#voiceBtn').textContent = 'Start new test';
+			$('#input_text').val('Error occurred in recognition: ' + event.error);
+		}
+
+	}
+
+	$('#voiceBtn').click(function() {
+		testSpeech()
+	});
 });
-
-//just to do start up animation
-showImgAt(2);
-
-
-
-
-//----------------------- Dragging Utility ----------------------
-Draggable.create('.scroller',{type:'x',bounds:{left:0,top:0,width:802,height:0},onDrag:function(){
-     var curImgIndex = Math.abs(Math.round(this.x / (802/l)));
-     
-     targetImgViewIndex = curImgIndex;
-  if(targetImgViewIndex === curImgViewIndex){
-    return;
-  }
-  rotate();
-  
-},onDragStart:function(){
-  scrollbarDragging = true;
-},onDragEnd:function(e){
-  scrollbarDragging = false;
-}}); 
-
-$('.scrolller-container').on('click',function(e){
-   var curImgIndex = Math.abs(Math.round(e.offsetX / (802/l)));
-   if(curImgIndex >= $imgs.length){
-     curImgIndex = $imgs.length - 1;
-   }console.log('boom');
-   showImgAt(curImgIndex);
-});
-
-$('.scrolller-container .scroller').on('click', function(e){
-   e.stopPropagation();
-});
-
-
-$imgs.on('click',function(){   
-    showImgAt($imgs.index($(this)));
-}); 
