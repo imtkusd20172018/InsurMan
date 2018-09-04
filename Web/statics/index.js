@@ -31,7 +31,7 @@ var date2 = new Date();
 $( document ).ready(function() {
 	if (document.images) {
 		var img1 = new Image();
-		img1.src = "/img/user.png";
+		img1.src = "/img/baseline_face_black_48dp.png";
 	}
 
 	var synth = window.speechSynthesis;
@@ -50,14 +50,14 @@ $( document ).ready(function() {
 		state = 0;
 		query = $('#input_text').val();
 		$('#input_text').val('');
-        $(".chat").append('<li class="clearfix"><div class="message row"></div><div class="col s10 m10 l10 chat-body clearfix right"><img src="/img/user.png" alt="User Avatar" class="mfr circle responsive-img" align="right"><p class="right">' + query + '</p></div></li>');
+        $(".chat").append('<li class="clearfix"><div class="message row"></div><div class="col s10 m10 l10 chat-body clearfix right"><img src="/img/baseline_face_black_48dp.png" alt="User Avatar" class="mfr circle responsive-img" align="right"><p class="right">' + query + '</p></div></li>');
 		$(".panel-body").stop().animate({
 			scrollTop: $(".panel-body")[0].scrollHeight
 		}, 1000);
 		function response(){
 			if (state == 0){
 				speak('請稍後')
-                $(".chat").append('<li class="clearfix"><div class="message row"></div><div class="col s10 m10 l10 chat-body clearfix left"><img src="/img/AIWISFIN.png" alt="User Avatar" class="mfr circle responsive-img" align="left"><p class="left">請稍後</p></div></li>');
+                $(".chat").append('<li class="clearfix"><div class="message row"></div><div class="col s10 m10 l10 chat-body clearfix left"><img src="/img/ICON2.png" alt="User Avatar" class="mfr circle responsive-img" align="left"><p class="left">請稍後</p></div></li>');
 				$(".panel-body").stop().animate({
 					scrollTop: $(".panel-body")[0].scrollHeight
 				}, 1000);}
@@ -70,7 +70,7 @@ $( document ).ready(function() {
 			query: query,
 		}, function(data) {
 			speak(data.result)
-            $(".chat").append('<li class="clearfix"><div class="message row"></div><div class="col s10 m10 l10 chat-body clearfix left"><img src="/img/AIWISFIN.png" alt="User Avatar" class="mfr circle responsive-img" align="left"><p class="left">' + data.result + '</p></div></li>');
+            $(".chat").append('<li class="clearfix"><div class="message row"></div><div class="col s10 m10 l10 chat-body clearfix left"><img src="/img/ICON2.png" alt="User Avatar" class="mfr circle responsive-img" align="left"><p class="left">' + data.result + '</p></div></li>');
 			$(".panel-body").stop().animate({
 				scrollTop: $(".panel-body")[0].scrollHeight
 			}, 2000);

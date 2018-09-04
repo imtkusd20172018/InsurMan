@@ -7,7 +7,6 @@ from getData.golden import getGolden
 from getData.Currency import getCurrency
 from getData.data import getSite,getStock,getStocNum
 
-
 import re
 from linebot import (
     LineBotApi, WebhookHandler
@@ -18,8 +17,7 @@ from linebot.exceptions import (
 from linebot.models import *
 
 
-# !/usr/bin/python
-# coding:utf-8
+
 
 
 
@@ -43,7 +41,6 @@ def send_statics(path):
 
 @application.route('/_add_numbers')
 def add_numbers():
-
     query = request.args.get('query')
     query = query.upper()
     query = re.sub('臺','台',query)
@@ -88,7 +85,6 @@ def add_numbers():
             regex = re.compile('(美金|日圓|日元|人民幣|英鎊|歐元)')
             query = regex.search(query)
             reply = getCurrency(query.group(1))
-
 
         #請問本公司之續次保費繳費方式有哪些？
         elif(re.search('續', query)!=None):
@@ -177,9 +173,7 @@ def add_numbers():
         #主契約可轉換之作業與險種規定為何？
 
         #什麼情形不得申請轉換契約？
-
-
-
+            
         else:
             query = query.upper()
             response = runAIML(query)

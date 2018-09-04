@@ -14,6 +14,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <scrip src="http://code.jquery.com/jquery-3.3.1.js"></scrip>
     <script src=".\statics\Insurman.slide.js"></script>
+    <script src=".\statics\Insurman-panel.js"></script>
+    <script src=".\statics\Insurman.calculate.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+       $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+    $(document).ready(function(){   
+        $('.carousel').carousel('next');
+            $('.carousel').carousel('next', 3); // Move next n times.
+            // Previous slide
+            $('.carousel').carousel('prev');
+            $('.carousel').carousel('prev', 4); // Move prev n times.
+            // Set to nth slide
+            $('.carousel').carousel('set', 4);
+     });
+    $(document).ready(function(){ 
+    $(".dropdown-button").dropdown();
+     });
+    </script>
 </head>
 <body>
     <header>
@@ -38,9 +60,14 @@
                         <li>
                             <a href="#b" id="menu2">問答專區</a>
                         </li>
-
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown1" class="dropdown-content">
+                          <li><a id="menu3" href="#!" style="color: black;text-align: center;">人身保險</a></li>
+                          <li><a id="menu3" href="#!" style="color: black;text-align: center;">產物保險</a></li>
+                          <li><a id="menu3" href="#!" style="color: black;text-align: center;">IRR計算機</a></li>
+                        </ul>
                         <li>
-                            <a href="#c" id="menu3">保險相關服務</a>
+                            <a class="dropdown-button" href="#c" id="menu3" data-activates="dropdown1">保險相關服務</a>
                         </li>
                         <li>
                             <a href="#d" id="menu4">聯絡我們</a>
@@ -58,6 +85,7 @@
             <p class="div-3 animated fadeInUp" style="animation-duration: 8s">ALWAYS BE HERE FOR YOU</p>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
      </div>
+     <hr id="hr01">
     <div class="section2" id="s01">
             <div class="A-0">About InsurMan</div>
     </div>
@@ -73,10 +101,12 @@
         <source src="" type="video/mp4"></source>
         </video>        
         </div>
+    <hr id="hr02">
     <div class="section2" id="s02">
             <div class="A-1">問答專區</div>
         </div>
 <div class="section"  id="sec03">
+    <img id="pic-1" src=".\img\ZBi4OyE.png">
     <div id="chatbox_content" class="card white">
         <div class="container">
             <div class="panel panel-primary">
@@ -86,7 +116,7 @@
                             <div class="container">
                                 <div class="message row">
                                     <div class="col s10 m10 l10 chat-body clearfix left">
-                                        <img src=".\img\AIWISFIN.png" alt="User Avatar" class="mfr circle responsive-img" align="left">
+                                        <img src=".\img\ICON2.png" alt="User Avatar" class="mfr circle responsive-img" align="left">
                                         <p class="left">
                                             您好
                                         </p>
@@ -112,11 +142,12 @@
                         </div>
                     </div>
                     <div>
-                            <a id="sendbox" class="btn-floating waves-effect waves-light white "><img src="./img/baseline_send_black_36dp.png" alt="發送" style="width:36px;height:36px;display:inline;left: 4%;"></a>
+                            <a id="sendbox" class="btn-floating waves-effect waves-light white "><img src="./img/baseline_arrow_forward_black_48dp.png" alt="發送" style="width:40px;height:36px;display:inline;left: 15%;top: -10%;"></a>
                         </div>
             </form>
         </div>
 </div>
+<hr id="hr03">
         <div class="section2" id="s03">
             <div class="A-1">保險相關服務</div>
         </div>
@@ -124,53 +155,164 @@
             <input type="button" name="人身" class="Q0" value="人身保險" id="pageone0" ><br/>
             <input type="button" name="產物" class="Q1" value="產物保險" id="pageone1" ><br/>
             <input type="button" name="計算機" class="Q2" value="IRR計算機" id="pageone2" ><br/>
-        </div>
+        
         <div id="pageone-1">    
         <span class="arrow_l_out"></span>
         <span class="arrow_l_in"></span>
-        <h1 class="inside0-header">壽險</h1>
         <input type="button" name="叉叉1" class="pageone-1-btn1"><br/>
         <div class="inside0">
-            <nav class="navbar navbar-default bg-light">
-                  <a class="navbar-brand" id="inside0-color-1">儲蓄型壽險</a>
+            <ul class="collapsible" id="collapsible-1" data-collapsible="accordion">
+              <nav class="nav-wrapper">
+                  <a class="brand-logo" id="inside0-color-1">儲蓄型壽險</a>
             </nav>
-            <span class="inside-words-color-0">
-            <p >富邦人壽金好鑽利率變動型增額還本終身保險</p>
-            <hr>
-            <p >富邦人壽美珍鑽外幣利率變動型增額還本終身保險</p>
-            <hr>
-            <p>富邦人壽金富貴利率變動型終身壽險</p>
-            <hr>
-            <p >富邦人壽美利富貴外幣利率變動型終身壽險</p>
-            </span>
+              <li>
+                <div class="collapsible-header active">金好鑽利率變動型增額還本終身保險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-1" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >年年還本!自繳費期間內即年年還本至終身，生存保險金靈活運用。...<br>
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span> 
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">美珍鑽外幣利率變動型增額還本終身保險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-2" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >年年領取!自投保起每年即給付生存保險金至終身，生存保險金靈活運用好得利。<br>
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span> 
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">金富貴利率變動型終身壽險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-3" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >一次繳費，終身保障 ! 穩健理財低風險！...<br>
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span> 
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">美利富貴外幣利率變動型終身壽險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-4" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >一次繳費，終身保障 ! 美元收付保單，分散單一幣別風險。...<br>
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span> 
+                </div>
+              </li>
+              </ul>
+
         </div>
         <div class="inside1">
-            <nav class="navbar navbar-default bg-light">
-                  <a class="navbar-brand" id="inside0-color-2">投資型壽險</a>
+            <ul class="collapsible" id="collapsible-2" data-collapsible="accordion">
+              <nav class="nav-wrapper">
+                  <a class="brand-logo" id="inside0-color-2">投資型壽險</a>
             </nav>
-            <span class="inside-words-color-1">
-            <p>富邦人壽富利人生變額年金保險</p>
-            <hr>
-            <p >富邦人壽外幣計價富利人生變額年金保險</p>
-            <hr>
-            <p >富邦人壽外幣計價富貴一生變額壽險</p>
-            <hr>
-            <p >富邦人壽外幣計價富貴一生變額年金保險</p>
-        </span>
+              <li>
+                <div class="collapsible-header active">富利人生變額年金保險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-1" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >新台幣計價之附保證機制之投資型保單，讓您的人生更有把握！...<br>
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span> 
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">外幣計價富利人生變額年金保險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-2" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >美元計價之附保證機制之投資型保單，讓您的人生更有把握！...<br>
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span> 
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">外幣計價富貴一生變額壽險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-3" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >保障及投資兼具，一次滿足壽險及理財需求。...<br>
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span> 
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">外幣計價富貴一生變額年金保險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-4" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >投資同時兼顧退休規劃，給您大戶級的專業金融服務感受。...<br>
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span> 
+                </div>
+              </li>
+            </ul>
         </div>
         <div class="inside2">
-            <nav class="navbar navbar-default bg-light">
-                  <a class="navbar-brand" id="inside0-color-2">保障型保險</a>
+            <ul class="collapsible" id="collapsible-3" data-collapsible="accordion">
+            <nav class="nav-wrapper">
+                  <a class="brand-logo" id="inside0-color-2">保障型保險</a>
             </nav>
-            <span class="inside-words-color">
-            <p >富邦人壽金來寶小額終身壽險</p>
-            <hr>
-            <p>富邦人壽新平安福保本保險</p>
-            <hr>
-            <p>富邦人壽醫帆風順保險</p>
-            <hr>
-            <p >富邦人壽安富久久殘廢照護終身壽險</p>
-            </span>
+                <li>
+                <div class="collapsible-header active">金來寶小額終身壽險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-1" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >滿足最基本的保險需求，傳承幸福  小額美好。...<br>
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">新平安福保本保險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-2" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >壽險、傷殘、傷害醫療三合一，意外保障終身又保本，為您抵禦不同意外風險。
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">醫帆風順保險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-3" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >投取得全民健保重大傷病證明者，重大傷病保險金補貼您醫療所需。...<br>
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">安富久久殘廢照護終身壽險</div>
+                <div class="collapsible-body">
+                    <span id="collapsible-body-4" class="animated fadeInUp" style="animation-duration: 1s">
+                    <p >因疾病或意外致成1-6級殘廢，豁免保險費並按月領取殘廢生活扶助保險金。
+                    <a href=""><商品DM連結></a>                                                                                         
+                    <a href=""><與我聯絡></a>
+                    </p>
+                    </span>
+                </div>
+              </li>
+              </ul>
         </div>
         </div>
         <div id="pageone-2">
@@ -178,65 +320,45 @@
         <span class="arrow_2_in"></span>
         <input type="button" name="叉叉2" class="pageone-2-btn1"><br/>
         <h1 class="pageone-2-words"> 險種導覽</h1>
-<div class="container" >
-  <div class="img-holder">
-    <img id="img1" src="https://i.imgur.com/OMxJJpP.jpg" >
-    <div class="img-ref">
-      
-    </div>
-    <a href="https://www.fubon.com/insurance/b2c/content/main/new02.html" target="_blank">
-        <h2 >汽車保險</h2>
-    </a>
-  </div>
-
-  <div class="img-holder">
-    <img  id="img1" src="https://i.imgur.com/KQt0Gyx.jpg" > 
-      <div class="img-ref">
-       
-    </div>
-    <a href="https://www.fubon.com/insurance/b2c/content/main/new.html" target="_blank">
-    <h2>機車保險</h2>
-    </a>
-  </div> 
-  <div class="img-holder">
-    <img id="img1" src="https://i.imgur.com/G6iz0Xf.jpg" >
-      <div class="img-ref">
-       
-    </div>
-    <a href="https://www.fubon.com/insurance/b2c/content/main/new04.html" target="_blank">
-    <h3>旅平險</h3>
-    </a>
-  </div> 
-  <div class="img-holder">
-    <img id="img1" src="https://i.imgur.com/D2LBGmG.jpg" >
-      <div class="img-ref">
-       
-    </div>
-    <a href="https://www.fubon.com/insurance/b2c/content/main/new03.html" target="_blank">
-    <h2>住宅火險</h2>
-    </a>
-  </div> 
-  <div class="img-holder">
-    <img id="img1" src="https://i.imgur.com/D2LBGmG.jpg" >
-      <div class="img-ref">
-       
-    </div>
-    <a href="https://www.fubon.com/insurance/b2c/content/prod_accident/index.html?utm_source=VM&utm_medium=menu&utm_campaign=RI" target="_blank">
-    <h4>意外傷害險</h4>
-    </a>
-  </div> 
-</div>
-  <div class="scrolller-container">
-    <div class="scroller"></div>
-  </div>
-
-  <script src='js/jquery.js'></script>
-  <script src='js/TweenMax.min.js'></script>
-  <script src='js/Draggable.min.js'></script>
-  <script src="js/index.js"></script>
+        <div class="carousel" id="carousel-1">
+            <span class="carousel-item" ><img id="carousel-item-1" class="z-depth-5" src="./img/OMxJJpP.jpg">
+                <div style="position: absolute;top: 98%; width: 120%;height: 20%;background-color: white;border-radius: 5px;">
+                <a href="https://www.fubon.com/insurance/b2c/content/main/new02.html" target="_blank" id="words-1">
+                汽車保險
+            </a>
         </div>
-
-<div id="pageone-4">
+            </span>
+            <span class="carousel-item" ><img id="carousel-item-1" class="z-depth-5" src="./img/KQt0Gyx.jpg">
+                <div style="position: absolute;top: 98%; width: 120%;height: 20%;background-color: white;border-radius: 5px;">
+                <a href="https://www.fubon.com/insurance/b2c/content/main/new.html" target="_blank" id="words-1">
+                機車保險    
+            </a>
+            </div>
+            </span>
+            <span class="carousel-item" ><img id="carousel-item-1" class="z-depth-5"  src="./img/G6iz0Xf.jpg">
+                <div style="position: absolute;top: 98%; width: 120%;height: 20%;background-color: white;border-radius: 5px;">
+                <a href="https://www.fubon.com/insurance/b2c/content/main/new04.html" target="_blank" id="words-3">
+                旅平險
+            </a>
+            </div>
+            </span>
+            <span class="carousel-item" ><img id="carousel-item-1"  class="z-depth-5" src="./img/D2LBGmG.jpg">
+                <div style="position: absolute;top: 98%; width: 120%;height: 20%;background-color: white;border-radius: 5px;">
+                <a href="https://www.fubon.com/insurance/b2c/content/main/new03.html" target="_blank" id="words-1">
+                住宅火險
+            </a>
+            </div>
+            </span>
+            <span class="carousel-item" ><img id="carousel-item-1" class="z-depth-5" src="./img/D2LBGmG.jpg">
+                <div style="position: absolute;top: 98%; width: 120%;height: 20%;background-color: white;border-radius: 5px;">
+                <a href="https://www.fubon.com/insurance/b2c/content/prod_accident/index.html?utm_source=VM&utm_medium=menu&utm_campaign=RI" target="_blank" id="words-2">
+                意外傷害險
+            </a>
+            </div>
+            </span>
+          </div>
+          </div>
+        <div id="pageone-3">
         <span class="arrow_3_out"></span>
         <span class="arrow_3_in"></span>
         <input type="button" name="叉叉3" class="pageone-3-btn1"><br/>
@@ -244,26 +366,27 @@
         <p id="pageone-4-word2">Please enter the information,we will show your IRR value.</p>
         <p id="pageone-4-word3">領回時間（年） </p>
         <div class="col-1">
-            <input class="effect-1"  id="yearInput" type="text">
+            <input class="effect-1"  id="yearInput" type="text" autocomplete="off">
             <span class="focus-border"></span>
         </div>
         <p id="pageone-4-word4">躉繳 </p>
         <div class="col-2">
-            <input class="effect-2"  id="depositInput" type="text">
+            <input class="effect-2"  id="depositInput" type="text" autocomplete="off">
             <span class="focus-border"></span>
         </div>
         <p id="pageone-4-word5">期滿領回</p>
         <div class="col-3">
-            <input class="effect-3"  id="receiveInput" type="text">
+            <input class="effect-3"  id="receiveInput" type="text" autocomplete="off">
             <span class="focus-border"></span>
         </div>
-        <button type="button" id="btnClick" onClick="calculateIRR()">計算</button><br>
+        <a class="waves-effect waves-light btn" type="button" id="btnClick" onClick="calculateIRR()"> 計算 </a>
         <p id="pageone-4-word6">The IRR value:</p>
         <div id="IRROutput"></div>
         </div>
+        
         </div>
-
-        <div class="section2" id="s04">
+        <hr id="hr04">
+<div class="section2" id="s04">
             <div class="A-0">Contact</div>
         </div>
         <div class="section"  id="sec05">
@@ -276,16 +399,41 @@
         <div class="t-1-2">
             <hr class="A1"> 
         </div>
+
         <div class="T-0"></div>
-            <form  method="post" action="轉接收的PHP位置">
-                <input type="text1" name="姓名" id="tt1" class="t1" placeholder="姓名"><br/>
-                <input type="text1" name="電子信箱" id="tt2" class="t2" placeholder="電子信箱"><br/>
-                <input type="text1" name="類別" id="tt3" class="t3" placeholder="類別"><br/>
-                <textarea id="content" name="content" class="t4" placeholder="輸入所遇到的問題、困難或是建議的地方....." /></textarea>
+            <div class="row" >
+                <form class="col s12" method="post" action="轉接收的PHP位置">
+                  <div class="row" id="row-1">
+                    <div class="input-field col s6" >
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="icon_prefix" type="text" class="validate"  autocomplete="off">
+                      <label for="icon_prefix" id="icon-words-3">姓名</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">email</i>
+                      <input id="icon_email" type="email" class="validate" autocomplete="off">
+                      <label for="icon_email" id="icon-words-3">電子信箱</label>
+                    </div>
+                </div>
+                <div class="row" id="row-2">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">question_answer</i>
+                  <input id="icon_question" type="text" class="validate" autocomplete="off">
+                  <label for="icon_question" id="icon-words-3">類別</label>
+                </div>
+            </div>
+                <div class="row" id="row-3">
+                    <div class="input-field col s12" id="mode_edit">
+                          <i class="material-icons prefix">mode_edit</i>
+                          <textarea id="icon_prefix2" class="materialize-textarea" placeholder="輸入所遇到的問題、困難或是建議的地方....." autocomplete="off"></textarea>
+                          <label for="icon_prefix2"></label>
+                        </div>
+                  </div>
                 <input name="backurl" value="傳送的網址" type="hidden"><br/>
                 <input name="lang" value="zh-TW" type="hidden"><br/>
-                <input id="tt4" class="t5" name="submit" value="確認" type="submit"><br/>
-            </form>
+                <a class="waves-effect waves-light btn" type="button" id="t5">送出</a>
+                </form>
+              </div>
         </div>
     <footer class="BOTTOM">
             <a href="#LINE"><img id="BOTTOM-pic-1" src="./img/FvbIwLf.png" ></a>

@@ -73,24 +73,25 @@ nav ul li a {
 #voiceBtn{
     position: absolute;
     top: 89%;
-    left: 17%;
+    left: 8%;
     width:4%;
-    height:10%;
+    height:9%;
     border-radius: 50px;
 }
 a.btn-floating {
    position: absolute;
-    top: 90%;
-    left: 78%;
+    top: 91.5%;
+    left: 68%;
     width:5%;
     height:6%;
     border-radius:50px;
+    border:1px black solid;
 }
 
 #input_box {
     position: absolute;
-    top: 89%;
-    left: 25%;
+    top: 90%;
+    left: 15%;
     width:50%;
     height:6%;
     border:1px black solid;
@@ -128,18 +129,18 @@ a.btn-floating {
 .container {
     position: relative;
     width: 100%;
-    height: 8%;
+    height: 15%;
 }
 
 #chatbox_content {
     position: relative;
-    margin:0px auto;
-    top: 0%;
-    width:70%;
-    height:75%;
+    left: 4.5%;
+    top: -3.5%;
+    width:65%;
+    height:40%;
     background-color: white;
-    border:0px white solid;
-    border-radius: 10px; 
+    border:0px black solid;
+    border-radius: 20px; 
 }
 #inputBox_content {
     margin: 20px 70px 0 70px;
@@ -236,11 +237,6 @@ p {
         margin-bottom: 10px;
         padding-bottom: 5px
     }
-
-hr {
-    border-bottom: 1px dotted #B3A9A9
-}
-
 .chat .glyphicon, .panel .slidedown .glyphicon {
     margin-right: 5px;
 }
@@ -293,26 +289,30 @@ input:focus{
 textarea:focus{
     outline:none;
 }
+.nav-wrapper{
+    border-radius: 5px;
+}
 #hr01{
-    position: absolute;
-    top: -6.5%;
+    position: relative;
+    top: -10%;
+    border: 0px solid black;
 }
 #hr02{
-    border: 1px solid black;
-    position: absolute;
-    top: 10%;
+    border: 0px solid black;
+    position: relative;
+    top: 77%;
 
 }
 #hr03{
-    border: 1px solid black;
-    position: fixed;
-    top:10%;
+    border: 0px solid black;
+    position: relative;
+    top:165%;
 
 }
 #hr04{
-    border: 1px solid black;
-    position: fixed;
-    top:60%;
+    border: 0px solid black;
+    position: relative;
+    top:10%;
 
 }
 .section{
@@ -338,7 +338,7 @@ textarea:focus{
         font-family: Microsoft JhengHei;
     }
     #sec03{
-        background:#9F88FF;
+    border-color:white;   
         height: 75%;
     }
     #sec04{
@@ -354,6 +354,12 @@ textarea:focus{
         top: -2%;
         left: -0%;
     }
+ #pic-1{
+    position: absolute;
+    top: -2%;
+    height: 100%;
+    width:  100%;
+ }   
 .div-d{
     top: 0%;
     right: 1.6%;
@@ -428,6 +434,7 @@ textarea:focus{
     }
      #s05{
         width: 100%;
+        display: inline-block;
     }
 .A-1{
     position: absolute;
@@ -492,7 +499,7 @@ textarea:focus{
         width:60%;
         height:70%;
         background-color: #FFFFFF;
-        border:2px #B0B0B0 solid;
+        border:0px #B0B0B0 solid;
         border-radius :10px;
 }
 #B-4-4{
@@ -509,7 +516,7 @@ textarea:focus{
         left: 0%;
         width:100%;
         height:100%;
-        border:2px #B0B0B0 solid;
+        border:0px #B0B0B0 solid;
 }
 #B-6{
     position: absolute;
@@ -564,50 +571,50 @@ textarea:focus{
     letter-spacing:15px;
     font-weight:bolder;
 }
-#pageone-1{ 
+#pageone-1{
     position: absolute;
-    top: 280%;
-    left: 29%;
+    top: 9%;
+    left: 28%;
     background: #DEB887;
-    height: 62%;
-    width: 65%;
-    border:1px black  solid;
+    height: 80%;
+    width: 70%;
+    border:1px black solid;
     display: none;
-
 }
 .pageone-1-btn1{
     position: absolute;
-    top: 2%;
+    top: 1%;
     left: 94%;
-    height: 10%;
+    height: 9%;
     width: 5%;
     border-radius: 50px;
 }
 #pageone-2{ 
     position: absolute;
-    top: 280%;
-    left: 29%;
+    top: 9%;
+    left: 28%;
     background: #DEB887;
-    height: 64%;
-    width: 65%;
+    height: 80%;
+    width: 70%;
     border:1px black  solid;
     display: none;
+
 }
 .pageone-2-btn1{
     position: absolute;
-    top: 2%;
+    top: 1%;
     left: 94%;
-    height: 10%;
+    height: 9%;
     width: 5%;
     border-radius: 50px;
 }   
-#pageone-4{ 
+#pageone-3{ 
     position: absolute;
-    top: 280%;
-    left: 29%;
+    top: 9%;
+    left: 28%;
     background: #DEB887;
-    height: 64%;
-    width: 65%;
+    height: 80%;
+    width: 70%;
     border:1px black solid;
     display: none;
 }
@@ -627,7 +634,7 @@ border-style:solid;
 border-color:transparent #DEB887 transparent transparent;
 position:absolute;
 top:6.5%;
-left:-6%;
+left:-6.5%;
 }
 .arrow_l_out{
 width:0px;
@@ -637,7 +644,7 @@ border-style:solid;
 border-color:transparent black transparent transparent;
 position:absolute;
 top:6.5%;
-left:-6.1%;
+left:-6.7%;
 }
 .arrow_2_in{
 width:0px;
@@ -647,7 +654,7 @@ border-style:solid;
 border-color:transparent #DEB887 transparent transparent;
 position:absolute;
 top:43%;
-left:-6%;
+left:-6.5%;
 }
 .arrow_2_out{
 width:0px;
@@ -657,7 +664,7 @@ border-style:solid;
 border-color:transparent black transparent transparent;
 position:absolute;
 top:43%;
-left:-6.1%;
+left:-6.7%;
 }
 .arrow_3_in{
 width:0px;
@@ -667,7 +674,7 @@ border-style:solid;
 border-color:transparent #DEB887 transparent transparent;
 position:absolute;
 top:80%;
-left:-6%;
+left:-6.5%;
 }
 .arrow_3_out{
 width:0px;
@@ -677,21 +684,82 @@ border-style:solid;
 border-color:transparent black transparent transparent;
 position:absolute;
 top:80%;
-left:-6.1%;
+left:-6.7%;
 }
 .inside0{
-    position: absolute;
-    top: 18%;
-    left: 4%;
-    width:33%;
-    height:75%;
-    border:0.1vw black solid;
+    position: relative;
+    top: 5%;
+    left: 3%;
+    width:34%;
+    height:85%;
+    border:0px black solid;
     border-radius:5px;
+}
+#collapsible-1{
+    position: absolute;
+    top: -3%;
+}
+#collapsible-body-1{
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    font-family:'Microsoft JhengHei', sans-serif;
+    letter-spacing:2px;
+    font-size:15%;
+}
+#collapsible-body-2{
+    position: absolute;
+    top: 45%;
+    left: -10%;
+    font-family:'Microsoft JhengHei', sans-serif;
+    letter-spacing:2px;
+    font-size:15%;
+}
+#collapsible-body-3{
+    position: absolute;
+    top: 62%;
+    left: -10%;
+    font-family:'Microsoft JhengHei', sans-serif;
+    letter-spacing:2px;
+    font-size:15%;
+}
+#collapsible-body-4{
+    position: absolute;
+    top: 76%;
+    left: -10%;
+    font-family:'Microsoft JhengHei', sans-serif;
+    letter-spacing:2px;
+    font-size:15%;
+}
+#collapsible-2{
+    position: absolute;
+    top: 1%;
+    width:100%;
+}
+#collapsible-1{
+    position: absolute;
+    top: 0%;
+}
+
+#collapsible-3{
+    position: absolute;
+    top: 1%;
+    width:100%;
+}
+
+.collapsible{
+    border: 0px;
+}
+.collapsible-header{
+    text-align:center;
+    font-weight:bold; 
+}
+.collapsible-body{
+    height: 60px;
 }
 .inside0-header{
     font-family:'Microsoft JhengHei', sans-serif;
     font-size:250%;
-
     letter-spacing:15px;
     font-weight:bold;
     padding-left: 6%;
@@ -703,7 +771,6 @@ left:-6.1%;
     text-align:center;
     font-weight:bold;
     padding-left: 23%;
-
 }
 #inside0-color-2{
     font-family:'Microsoft JhengHei', sans-serif;
@@ -716,42 +783,41 @@ left:-6.1%;
 }
 .inside1{
     position: absolute;
-    top: 18%;
+    top: 9%;
     left: 39%;
     width:28%;
-    height:75%;
-    border:0.1vw black solid;
+    height:85%;
+    border:0px black solid;
     border-radius:5px;
 }
 .inside2{
     position: absolute;
-    top: 18%;
-    left: 69%;
+    top: 9%;
+    left:69.8%;
     width:28%;
-    height:75%;
-    border:0.1vw black solid;
+    height:85%;
+    border:0px black solid;
     border-radius:5px;
 }
 .inside-words-color{
     font-family:'Microsoft JhengHei', sans-serif;
-    font-size:110%;
+    font-size:20%;
     color:black;
     font-weight:bolder;
-    text-align: center;
 }
 .inside-words-color-1{
     font-family:'Microsoft JhengHei', sans-serif;
-    font-size:100%;
+    font-size:40%;
     color:black;
-    font-weight:bolder;
-    text-align: center;
+    font-weight:bolder;   
 }
 .inside-words-color-0{
     font-family:'Microsoft JhengHei', sans-serif;
-    font-size:103%;
+    font-size:20%;
     color:black;
     font-weight:bolder;
     text-align: center;
+    line-height: 20px;
 }
 .pageone-2-words{
     font-family:'Microsoft JhengHei', sans-serif;
@@ -760,45 +826,59 @@ left:-6.1%;
     text-align:center;
     font-weight:bold;
 }
+#carousel-1{
+    position:absolute;
+    top: 10%;
+
+}
+#carousel-item-1{
+    height: 100%;
+    width: 120%;
+}
 #pageone-4-word1{
     position: absolute;
     top: 5%;
-    left: 10%;
+    left: 8%;
     font-family: 'Roboto', sans-serif;
     font-size:350%;
     font-weight: bold;
+    letter-spacing: 5px;
 }
 #pageone-4-word2{
     position: absolute;
     top: 25%;
-    left: 10%;
+    left: 4%;
     font-family: 'Roboto', sans-serif;
     font-size:150%;
     font-weight: bold;
+    letter-spacing: 3px;
 }
 #pageone-4-word3{
     position: absolute;
-    top: 42%;
-    left: 10%;
+    top: 40%;
+    left: 4%;
     font-family: 'Microsoft JhengHei', sans-serif;
     font-size:150%;
     font-weight: bold;
+    letter-spacing: 5px;
 }
 #pageone-4-word4{
     position: absolute;
-    top: 42%;
-    left: 35%;
+    top: 40%;
+    left: 30%;
     font-family: 'Microsoft JhengHei', sans-serif;
     font-size:150%;
     font-weight: bold;
+    letter-spacing: 5px;
 }
 #pageone-4-word5{
     position: absolute;
-    top: 42%;
-    left: 60%;
+    top: 40%;
+    left: 55%;
     font-family: 'Microsoft JhengHei', sans-serif;
     font-size:150%;
     font-weight: bold;
+    letter-spacing: 5px;
 }
 #yearInput{
     background-color: #DEB887;
@@ -811,76 +891,75 @@ left:-6.1%;
 }
 #btnClick{
     position: absolute;
-    top: 52%;
-    left: 85%;
+    top: 55%;
+    left: 83%;
+    font-family: 'Microsoft JhengHei', sans-serif;
+    font-size:120%;
+    line-height: 45px;
     border-radius: 5px;
     height: 10%;
-    width: 10%;
+    width: 14%;
+    letter-spacing: 10px;
+    padding-left: 4%;
 }
 #pageone-4-word6{
     position: absolute;
-    top: 75%;
-    left: 10%;
+    top: 70%;
+    left: 5%;
     font-family: 'Roboto', sans-serif;
     font-size:150%;
     font-weight: bold;
+    letter-spacing: 5px;
 }
 #IRROutput{
     position: absolute;
-    top: 75%;
-    left: 30%;
+    top: 78%;
+    left: 35%;
     font-family: 'Roboto', sans-serif;
     font-size:150%;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 :focus{outline: none;}
 .col-1{
     position: absolute;
-    top: 54%;
-    left: 10%;
+    top: 55%;
+    left: 9%;
     background-color: #DEB887;
 }
 .col-2{
     position: absolute;
-    top: 54%;
+    top: 55%;
     left: 35%;
     background-color: #DEB887;
 }
 .col-3{
     position: absolute;
-    top: 54%;
-    left: 60%;
+    top: 55%;
+    left: 59%;
 
-}
-.col-4{
-    position: absolute;
-    top: 31%;
-    right: 34%;
-    background-color: white;
-    height: 6.2%;
-    width: 12%;
 }
 .effect-1{
     border: 0; 
-    padding: 4px 0; 
-    border-bottom: 2px solid black;
+    padding: 0px 0; 
+    border-top: 2px solid black;
 }
 .effect-2{
     border: 0; 
-    padding: 4px 0; 
+    padding: 0px 0; 
     border-bottom: 2px solid black;
 }  
 .effect-3{
     border: 0; 
-    padding: 4px 0; 
+    padding: 0px 0; 
     border-bottom: 2px solid black;
 }         
 input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
-.effect-1 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background-color: #FFFFFF  ; transition: 0.4s;  }
+.effect-1 ~ .focus-border{position: absolute; top:66%; bottom: 0; left: 0; width: 0; height: 3px; background-color: #FFFFFF  ; transition: 0.4s;  }
 .effect-1:focus ~ .focus-border{width: 100%; transition: 0.4s;}
-.effect-2 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background-color: #FFFFFF  ; transition: 0.4s; }
+.effect-2 ~ .focus-border{position: absolute; top:66%; bottom: 0; left: 0; width: 0; height: 3px; background-color: #FFFFFF  ; transition: 0.4s; }
 .effect-2:focus ~ .focus-border{width: 100%; transition: 0.4s;}
-.effect-3 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background-color: #FFFFFF  ; transition: 0.4s; }
+.effect-3 ~ .focus-border{position: absolute; top:66%; bottom: 0; left: 0; width: 0; height: 3px; background-color: #FFFFFF  ; transition: 0.4s; }
 .effect-3:focus ~ .focus-border{width: 100%; transition: 0.4s;}
 
 
@@ -949,16 +1028,18 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     font-size:100%;
     letter-spacing: 2px;
     border-radius: 10px;
+    border:border:1px #bdbdbd  solid;
 }
-.t5{
+#t5{
     width:7%;
     height:6%;
     position: absolute;
-    top: 77%;
+    top: 74%;
     left: 80%;
     font-family:'Microsoft JhengHei', sans-serif;
     font-size:100%;
-    padding-left: 3px;
+    padding-left: 1.8%;
+    letter-spacing: 3px;
     border-radius: 5px;
 }
 .t-1{
@@ -973,13 +1054,10 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
 .t-1-1{
     position: absolute;
     top: 2%;
-    left: -27%;
-    width:126.5%;
+    left: -28%;
+    width:127.5%;
     border-left:22vh solid transparent;
     border-bottom:57.3vh solid #DEB887;
-}
-.t-1-2{
- 
 }
 .T-0{
     position: absolute;
@@ -1024,3 +1102,109 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     width:  10%;
     display: block;
 }
+.z-depth-5{
+    background-color: white;
+}
+#words-1{
+    position: relative;
+    top:10%;
+    left: 23%;
+    font-family:'Microsoft JhengHei', sans-serif;
+    font-size:150%;
+    letter-spacing: 10px;
+    color: black;
+}
+#words-2{
+    position: relative;
+    top:10%;
+    left: 18%;
+    font-family:'Microsoft JhengHei', sans-serif;
+    font-size:150%;
+    letter-spacing: 10px;
+    color: black;
+}
+#words-3{
+    position: relative;
+    top:10%;
+    left: 31%;
+    font-family:'Microsoft JhengHei', sans-serif;
+    font-size:150%;
+    letter-spacing: 10px;
+    color: black;
+}
+#words-1:hover{
+    color:#ffcc80;
+}
+#row-1{
+    position: absolute;
+    top: 30%;
+    left: 53%;
+}
+#row-2{
+    position: absolute;
+    top: 43%;
+    left: 53%;
+    width: 50%;
+}
+#row-3{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 40%;
+}
+#icon_prefix2::-webkit-input-placeholder { /* WebKit browsers */
+color:black;
+font-family:'Microsoft JhengHei', sans-serif;
+    font-size:100%;
+    letter-spacing: 5px;}
+#icon_prefix2:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color:black;
+font-family:'Microsoft JhengHei', sans-serif;
+    font-size:100%;
+    letter-spacing: 5px;}
+#icon_prefix2::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:black;
+font-family:'Microsoft JhengHei', sans-serif;
+    font-size:100%;
+    letter-spacing: 5px;}
+#icon_prefix2:-ms-input-placeholder { /* Internet Explorer 10+ */
+color:black;
+font-family:'Microsoft JhengHei', sans-serif;
+    font-size:100%;
+    letter-spacing: 5px;}
+
+
+#icon-words-3{
+    color: black;
+    font-family:'Microsoft JhengHei', sans-serif;
+    font-size:100%;
+    letter-spacing: 5px;
+}
+#icon_prefix{
+    border-bottom:1px block solid;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+color:black;
+font-family:'Microsoft JhengHei', sans-serif;
+    font-size:100%;
+    letter-spacing: 5px;}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color:black;
+font-family:'Microsoft JhengHei', sans-serif;
+    font-size:100%;
+    letter-spacing: 5px;}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:black;
+font-family:'Microsoft JhengHei', sans-serif;
+    font-size:100%;
+    letter-spacing: 5px;}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+color:black;
+font-family:'Microsoft JhengHei', sans-serif;
+    font-size:100%;
+    letter-spacing: 5px;}
+#voiceBtn-1{
+    position: absolute;
+    left: 3%;
+}   
