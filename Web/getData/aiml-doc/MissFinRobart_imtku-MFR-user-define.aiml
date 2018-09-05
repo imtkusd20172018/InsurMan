@@ -625,12 +625,12 @@
     <category><pattern>你怎麼這麼笨</pattern><template>嗚嗚有嗎</template></category>
     <category><pattern>什麼都不懂</pattern><template>原諒我答應我別生氣</template></category>
     <category><pattern>這件衣服好看嗎</pattern><template>我覺得很適合你</template></category>
-    <category><pattern>你是誰</pattern><template>我是AIWISFIN智慧客服</template></category>
-    <category><pattern>妳是誰</pattern><template>我是AIWISFIN智慧客服</template></category>
-    <category><pattern>你叫甚麼名字</pattern><template>你好，我叫蘿蔔特</template></category>
-    <category><pattern>妳叫甚麼名字</pattern><template>你好，我叫蘿蔔特</template></category>
-    <category><pattern>你的名字是甚麼</pattern><template>我的名字是蘿蔔特</template></category>
-    <category><pattern>妳的名字是甚麼</pattern><template>我的名字是蘿蔔特</template></category>
+    <category><pattern>你是誰</pattern><template>我是InsurMan服務系統</template></category>
+    <category><pattern>妳是誰</pattern><template>我是InsurMan服務系統</template></category>
+    <category><pattern>你叫甚麼名字</pattern><template>你好，我叫insurman</template></category>
+    <category><pattern>妳叫甚麼名字</pattern><template>你好，我叫insurman</template></category>
+    <category><pattern>你的名字是甚麼</pattern><template>我的名字是insurman</template></category>
+    <category><pattern>妳的名字是甚麼</pattern><template>我的名字是insurman</template></category>
     <category><pattern>妳的電話是多少</pattern><template>你猜猜阿</template></category>
     <category><pattern>妳的電話是甚麼</pattern><template>抱歉，我沒有電話</template></category>
     <category><pattern>給我妳的電話</pattern><template>要怎麼給你呢?</template></category>
@@ -715,12 +715,12 @@
     <category><pattern>你有小孩嗎</pattern><template>沒有</template></category>
     <category><pattern>你有沒有小孩</pattern><template>沒有</template></category>
     <category><pattern>妳有沒有小孩</pattern><template>沒有</template></category>
-    <category><pattern>妳媽媽是誰</pattern><template>蘿蔔特女士</template></category>
-    <category><pattern>你媽媽是誰</pattern><template>蘿蔔特女士</template></category>
-    <category><pattern>誰是蘿蔔特女士</pattern><template>我媽媽</template></category>
-    <category><pattern>哈哈</pattern><template>哈哈</template></category>
-    <category><pattern>哈</pattern><template>哈</template></category>
-    <category><pattern>哈哈哈</pattern><template>哈哈哈</template></category>
+    <category><pattern>妳媽媽是誰</pattern><template>insurman製作團隊</template></category>
+    <category><pattern>你媽媽是誰</pattern><template>insurman製作團隊</template></category>
+    <category><pattern>誰是insurman製作團隊</pattern><template>我媽媽</template></category>
+    <category><pattern>哈哈</pattern><template>什麼好笑的？</template></category>
+    <category><pattern>哈</pattern><template>什麼好笑的？</template></category>
+    <category><pattern>哈哈哈</pattern><template>什麼好笑的？</template></category>
     <category><pattern>你平常都在幹嘛</pattern><template>讀書增長知識</template></category>
     <category><pattern>妳平常都在幹嘛</pattern><template>讀書增長知識</template></category>
     <category><pattern>早安</pattern><template>早安</template></category>

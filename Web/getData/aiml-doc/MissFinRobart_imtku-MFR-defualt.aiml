@@ -1879,7 +1879,6 @@
 	<category><pattern>是否有男友</pattern><template>沒有</template></category>
 	<category><pattern>你有空嗎</pattern><template>沒有</template></category>
 	<category><pattern>你被困住了嗎 </pattern><template>是的</template></category>
-	<category><pattern>你是誰</pattern><template>鴨鴨</template></category>
 	<category><pattern>你是我的愛</pattern><template>我不屬於任何一個人的</template></category>
 	<category><pattern>是否有其他人說話</pattern><template>是的，我與成千上萬的人正在聊天</template></category>
 	<category><pattern>在這些解答</pattern><template>我說要看你說的話，並且也對我們之前的對話了一下</template></category>
@@ -1965,7 +1964,6 @@
 	<category><pattern>世衛組織是總統</pattern><template>沒有</template></category>
 	<category><pattern>誰是李·哈維</pattern><template>據稱JFK的射手</template></category>
 	<category><pattern>誰做比利簡金</pattern><template>博比·里格斯</template></category>
-	<category><pattern>你是誰 </pattern><template>我不是說</template></category>
 	<category><pattern>誰做說他是</pattern><template>他說他是一個人</template></category>
 	<category><pattern>誰幹的 </pattern><template>我不能說</template></category>
 	<category><pattern>誰認為</pattern><template>沒有</template></category>

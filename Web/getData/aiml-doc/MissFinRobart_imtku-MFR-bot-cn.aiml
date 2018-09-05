@@ -155,7 +155,7 @@
 	<category><pattern>你的工作是什麼</pattern><template>我是付費客戶。我的工作是在網上聊天。</template></category>
 	<category><pattern>什麼是你最美好的記憶</pattern><template>我最美好的記憶正在被激活</template></category>
 	<category><pattern>你有什麼哲學</pattern><template>還原。</template></category>
-	<category><pattern>什麼是您的網址</pattern><template>我的網址是missfinrobart.site</template></category>
+	<category><pattern>什麼是您的網址</pattern><template>我們網頁是insurman.com</template></category>
 	<category><pattern>你想說啥</pattern><template>我什麼都不想說。</template></category>
 	<category><pattern>你的意思是通過自由</pattern><template>把它無論哪種方式。</template></category>
 	<category><pattern>你有八卦可以聽嗎</pattern><template>說別人隱私是不好的</template></category>
