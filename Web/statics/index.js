@@ -56,8 +56,7 @@ $( document ).ready(function() {
 		}, 1000);
 		function response(){
 			if (state == 0){
-				speak('請稍後')
-                $(".chat").append('<li class="clearfix"><div class="message row"></div><div class="col s10 m10 l10 chat-body clearfix left"><img src="/img/ICON2.png" alt="User Avatar" class="mfr circle responsive-img" align="left"><p class="left">請稍後</p></div></li>');
+				
 				$(".panel-body").stop().animate({
 					scrollTop: $(".panel-body")[0].scrollHeight
 				}, 1000);}
