@@ -72,16 +72,16 @@ nav ul li a {
 }
 #voiceBtn{
     position: absolute;
-    top: 89%;
-    left: 8%;
-    width:4%;
-    height:9%;
+    top: 90.5%;
+    left: 6%;
+    width:3.5%;
+    height:8%;
     border-radius: 50px;
 }
 a.btn-floating {
    position: absolute;
     top: 91.5%;
-    left: 68%;
+    left: 65%;
     width:5%;
     height:6%;
     border-radius:50px;
@@ -90,8 +90,8 @@ a.btn-floating {
 
 #input_box {
     position: absolute;
-    top: 90%;
-    left: 15%;
+    top: 90.3%;
+    left: 12%;
     width:50%;
     height:6%;
     border:1px black solid;
@@ -134,10 +134,10 @@ a.btn-floating {
 
 #chatbox_content {
     position: relative;
-    left: 4.5%;
-    top: -3.5%;
-    width:65%;
-    height:40%;
+    left: 3%;
+    top: -3%;
+    width:67%;
+    height:38%;
     background-color: white;
     border:0px black solid;
     border-radius: 20px; 
@@ -292,15 +292,22 @@ textarea:focus{
 .nav-wrapper{
     border-radius: 5px;
 }
-#hr01{
-    position: relative;
-    top: -10%;
-    border: 0px solid black;
+#material-icons-1{
+    font-family:'Microsoft JhengHei', sans-serif;
+    font-size:120%;
+    letter-spacing:2px;
+    font-weight:bolder;
+    color: #000000; 
 }
-#hr02{
-    border: 0px solid black;
-    position: relative;
-    top: 77%;
+#hr01{
+    position: absolute;
+    top: -10%;
+    border: 1px solid black;
+}
+#a02{
+    border: 1px solid black;
+    position: absolute;
+    top: -10%;
 
 }
 #hr03{
@@ -342,12 +349,21 @@ textarea:focus{
         height: 75%;
     }
     #sec04{
-        background: #FF7744;
+        background: #0277bd;
         height: 75%;
+        border-radius: 5px;
+        opacity: 0.8;
     }
     #sec05{
         background: #DEB887;
         height: 83%;
+    }
+    #img1{
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
     }
     .div-1{
         position: fixed;
@@ -357,8 +373,9 @@ textarea:focus{
  #pic-1{
     position: absolute;
     top: -2%;
-    height: 100%;
-    width:  100%;
+    left: -2.5%;
+    height: 101%;
+    width:  105%;
  }   
 .div-d{
     top: 0%;
@@ -370,8 +387,8 @@ textarea:focus{
     font-weight:bolder;
     padding-right: 10px;
     color: #000000; 
-}   
-    .div-2{
+}
+.div-2{
     position:absolute;      
     top: 45%;
     left: 40%;
@@ -402,8 +419,8 @@ textarea:focus{
     color: white;
     padding: 3% 5%;
     font-size:80%;     
-    font-family: 'Raleway', sans-serif;     
-    font-weight: 800;
+    font-family: 'Microsoft JhengHei', sans-serif;
+    font-weight: 900;
     line-height: 30px;
     letter-spacing:8px;
     text-align: center;
@@ -457,9 +474,9 @@ textarea:focus{
     top: 22%;
     left: 50%; 
     width:40%;
-    height:55%;
-    background-color: #DEB887;
-    box-shadow:4px 4px 12px black;
+    height:54%;
+    background-color: black;
+    box-shadow:5px 5px 12px black;
     }
 #B-1{
         position: absolute;
@@ -512,9 +529,9 @@ textarea:focus{
 }
 #B-5{
     position: absolute;
-        top:25%;
-        left: 0%;
-        width:100%;
+        top:18%;
+        left: -6%;
+        width:102%;
         height:100%;
         border:0px #B0B0B0 solid;
 }
@@ -524,16 +541,16 @@ textarea:focus{
         left: 8%;
         width:35%;
         height:45%;
-        border:2px #B0B0B0 solid;
         background-color: white;
+        border:2px #B0B0B0 solid;
 }
 .A1{
     position:absolute;
     top: 23%;
-    left: 25%;
+    left: 48.5%;
     border:0.1vw white solid; 
-    width: 50%;
-    background-color: white;
+    width: 20%;
+    background-color:white;
 }
 .Q0{
     position: absolute;
@@ -575,11 +592,12 @@ textarea:focus{
     position: absolute;
     top: 9%;
     left: 28%;
-    background: #DEB887;
+    background-color:#e3f2fd;
     height: 80%;
     width: 70%;
-    border:1px black solid;
+    border:0px black solid;
     display: none;
+    opacity: 0.9;
 }
 .pageone-1-btn1{
     position: absolute;
@@ -593,11 +611,12 @@ textarea:focus{
     position: absolute;
     top: 9%;
     left: 28%;
-    background: #DEB887;
+    background: #e3f2fd;
     height: 80%;
     width: 70%;
-    border:1px black  solid;
+    border:0px black  solid;
     display: none;
+      opacity: 0.9;
 
 }
 .pageone-2-btn1{
@@ -612,11 +631,12 @@ textarea:focus{
     position: absolute;
     top: 9%;
     left: 28%;
-    background: #DEB887;
+    background: #e3f2fd;
     height: 80%;
     width: 70%;
-    border:1px black solid;
+    border:0px black solid;
     display: none;
+      opacity: 0.9;
 }
 .pageone-3-btn1{
     position: absolute;
@@ -631,7 +651,7 @@ width:0px;
 height:0px;
 border-width:30px;
 border-style:solid;
-border-color:transparent #DEB887 transparent transparent;
+border-color:transparent #e3f2fd transparent transparent;
 position:absolute;
 top:6.5%;
 left:-6.5%;
@@ -641,7 +661,7 @@ width:0px;
 height:0px;
 border-width:30px;
 border-style:solid;
-border-color:transparent black transparent transparent;
+border-color:transparent #e3f2fd transparent transparent;
 position:absolute;
 top:6.5%;
 left:-6.7%;
@@ -651,7 +671,7 @@ width:0px;
 height:0px;
 border-width:30px;
 border-style:solid;
-border-color:transparent #DEB887 transparent transparent;
+border-color:transparent #e3f2fd transparent transparent;
 position:absolute;
 top:43%;
 left:-6.5%;
@@ -661,7 +681,7 @@ width:0px;
 height:0px;
 border-width:30px;
 border-style:solid;
-border-color:transparent black transparent transparent;
+border-color:transparent #e3f2fd transparent transparent;
 position:absolute;
 top:43%;
 left:-6.7%;
@@ -671,7 +691,7 @@ width:0px;
 height:0px;
 border-width:30px;
 border-style:solid;
-border-color:transparent #DEB887 transparent transparent;
+border-color:transparent #e3f2fd transparent transparent;
 position:absolute;
 top:80%;
 left:-6.5%;
@@ -681,7 +701,7 @@ width:0px;
 height:0px;
 border-width:30px;
 border-style:solid;
-border-color:transparent black transparent transparent;
+border-color:transparent #e3f2fd transparent transparent;
 position:absolute;
 top:80%;
 left:-6.7%;
@@ -839,17 +859,17 @@ left:-6.7%;
     position: absolute;
     top: 5%;
     left: 8%;
-    font-family: 'Roboto', sans-serif;
-    font-size:350%;
+    font-family: 'Microsoft JhengHei', sans-serif;
+    font-size:300%;
     font-weight: bold;
     letter-spacing: 5px;
 }
 #pageone-4-word2{
     position: absolute;
-    top: 25%;
+    top: 26.5%;
     left: 4%;
-    font-family: 'Roboto', sans-serif;
-    font-size:150%;
+    font-family: 'Microsoft JhengHei', sans-serif;
+    font-size:110%;
     font-weight: bold;
     letter-spacing: 3px;
 }
@@ -881,13 +901,13 @@ left:-6.7%;
     letter-spacing: 5px;
 }
 #yearInput{
-    background-color: #DEB887;
+    background-color: #e3f2fd;
 }
 #depositInput{
-    background-color: #DEB887;
+    background-color: #e3f2fd;
 }
 #receiveInput{
-    background-color: #DEB887;
+    background-color: #e3f2fd;
 }
 #btnClick{
     position: absolute;
@@ -899,8 +919,9 @@ left:-6.7%;
     border-radius: 5px;
     height: 10%;
     width: 14%;
-    letter-spacing: 10px;
-    padding-left: 4%;
+    text-align: center;
+    background-color: #bcaaa4;
+    opacity: 0.9;
 }
 #pageone-4-word6{
     position: absolute;
@@ -914,7 +935,7 @@ left:-6.7%;
 #IRROutput{
     position: absolute;
     top: 78%;
-    left: 35%;
+    left: 20%;
     font-family: 'Roboto', sans-serif;
     font-size:150%;
     font-weight: bold;
@@ -923,19 +944,19 @@ left:-6.7%;
 :focus{outline: none;}
 .col-1{
     position: absolute;
-    top: 55%;
+    top: 54%;
     left: 9%;
-    background-color: #DEB887;
+    background-color: #e3f2fd;
 }
 .col-2{
     position: absolute;
-    top: 55%;
+    top: 54%;
     left: 35%;
-    background-color: #DEB887;
+    background-color: #e3f2fd;
 }
 .col-3{
     position: absolute;
-    top: 55%;
+    top: 54%;
     left: 59%;
 
 }
@@ -1030,44 +1051,63 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
     border-radius: 10px;
     border:border:1px #bdbdbd  solid;
 }
-#t5{
-    width:7%;
-    height:6%;
+#t5{   
     position: absolute;
     top: 74%;
     left: 80%;
+    width:8%;
+    height:6%;
+    letter-spacing: 6px;
+    border-radius: 5px;
     font-family:'Microsoft JhengHei', sans-serif;
     font-size:100%;
-    padding-left: 1.8%;
-    letter-spacing: 3px;
-    border-radius: 5px;
+    text-align: left;
+    background-color: #bcaaa4;
+    opacity: 0.9;
 }
 .t-1{
     position: absolute;
-    top:15%;
-    left: 40%;
+    top:13%;
+    left: 38%;
     width:53%;
-    border:0.3vw white solid;
+    border:0vw white solid;
     border-left:22vh solid transparent;
-    border-bottom:58vh solid white;
+    border-bottom:60vh solid white;
+    opacity: 0.5;
+
 }
 .t-1-1{
     position: absolute;
-    top: 2%;
-    left: -28%;
-    width:127.5%;
-    border-left:22vh solid transparent;
-    border-bottom:57.3vh solid #DEB887;
+    top: 14%;
+    left: 39%;
+    width:51.5%;
+    border-left:21vh solid transparent;
+    border-bottom:58vh solid #fff3e0;
+    opacity: 0.9;
 }
 .T-0{
     position: absolute;
     top: 7%;
     left: 7%;
     width:50%;
-    border-right:20vh solid transparent;
-    border-top:60vh solid white;
+    height: 70%;
+    background-color: white;
+    opacity: 0.5;
 }
-
+.T-0-1{
+    position: absolute;
+    top: 7.5%;
+    left: 7.5%;
+    width:49%;
+    height: 69%;
+    background-color:none;
+}
+#img-2{
+    padding-top: 0.5%;
+    width:100%;
+    height: 99.5%;
+    opacity: 0.9;
+}
 .BOTTOM{
    position:fixed;
    bottom:0;
@@ -1135,22 +1175,28 @@ input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width
 #words-1:hover{
     color:#ffcc80;
 }
+#words-2:hover{
+    color:#ffcc80;
+}
+#words-3:hover{
+    color:#ffcc80;
+}
 #row-1{
     position: absolute;
     top: 30%;
-    left: 53%;
+    left: 48%;
 }
 #row-2{
     position: absolute;
     top: 43%;
-    left: 53%;
+    left: 47%;
     width: 50%;
 }
 #row-3{
     position: absolute;
-    top: 55%;
-    left: 50%;
-    width: 40%;
+    top: 56%;
+    left: 44%;
+    width: 45%;
 }
 #icon_prefix2::-webkit-input-placeholder { /* WebKit browsers */
 color:black;
@@ -1206,5 +1252,68 @@ font-family:'Microsoft JhengHei', sans-serif;
     letter-spacing: 5px;}
 #voiceBtn-1{
     position: absolute;
-    left: 3%;
-}   
+    left: -2.5%;
+}
+#menu0:visited{color:#DEB887; background-color: white; }
+#menu0:hover{color:#DEB887  ;background-color: white;}   
+#menu0:active{color:#DEB887 ;background-color: white;}
+#menu1:visited{color:#DEB887  orange lighten-1; background-color: white; }
+#menu1:hover{color:#DEB887 ;background-color: white;}   
+#menu1:active{color:#DEB887 ;background-color: white;}
+#menu2:visited{color:#DEB887 ; background-color: white; }
+#menu2:hover{color:#DEB887 ;background-color: white;}   
+#menu2:active{color:#DEB887 ;background-color: white;}
+#menu3:visited{color:#DEB887 ; background-color: white; }
+#menu3:hover{color:#DEB887 ;background-color: white;}   
+#menu3:active{color:#DEB887 ;background-color: white;}
+#menu3-1{
+     color: black;
+     text-align: center;
+}     
+#menu3-1:visited{color:#DEB887 ; background-color: white; }
+#menu3-1:hover{color:#DEB887 ;background-color: white;}   
+#menu3-1:active{color:#DEB887 ;background-color: white;}
+#menu3-2{
+     color: black;
+     text-align: center;
+}     
+#menu3-2:visited{color:#DEB887 ; background-color: white; }
+#menu3-2:hover{color:#DEB887 ;background-color: white;}   
+#menu3-2:active{color:#DEB887 ;background-color: white;}
+#menu3-3{
+     color: black;
+     text-align: center;
+}  
+#menu3-3:visited{color:#DEB887 ; background-color: white; }
+#menu3-3:hover{color:#DEB887 ;background-color: white;}   
+#menu3-3:active{color:#DEB887 ;background-color: white;}   
+#menu4:visited{color:#DEB887 ; background-color: white; }
+#menu4:hover{color:#DEB887 ;background-color: white;}   
+#menu4:active{color:#DEB887 ;background-color: white;}   
+ 
+.aboutInsurMan{
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    font-family:'Microsoft JhengHei', sans-serif;
+    font-size:130%;
+    letter-spacing: 5px;
+}
+.aboutInsurMan1{
+    position: absolute;
+    top: 26%;
+    left: -1%;
+    font-family:'Microsoft JhengHei', sans-serif;
+    font-size:100%;
+    letter-spacing: 5px;
+    line-height: 35px;
+}
+.collapsible-body{
+    background-color: white;
+    opacity: 0.95;
+}
+
+
+
+
+
